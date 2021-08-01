@@ -1,0 +1,23 @@
+<div class="followBox">
+  <h1 class="heading">{{userType | titlecase }}</h1>
+  <hr>
+  <mat-list>
+    <mat-list-item class="mat-list-user" fxLayout="column" fxLayoutAlign="center stretch" *ngFor='let user of users'>
+
+
+        <div class="imgName" fxLayout="row" fxLayoutAlign="space-between center">
+          <div class="imgUser"><img [src]='user.imageUrl'></div>
+          <div fxLayout="column" fxLayoutAlign="center center">
+            <div class="name">{{user.name | titlecase}}</div>
+            <div class="email">{{user.email}}</div>
+          </div>
+          <div class="buttonUser">
+            <button *ngIf='userType=="followers"' class="buttonFollow" mat-raised-button color="primary"
+              (click)="followUser(user.email, user.name)">Follow</button>
+            <button *ngIf='userType=="following"' class="buttonFollow" mat-raised-button color="primary"
+              (click)="unfollowUser(user.email, user.name)">Unfollow</button>
+          </div>
+        </div>
+    </mat-list-item>
+  </mat-list>
+</div>

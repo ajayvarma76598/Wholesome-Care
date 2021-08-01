@@ -1,0 +1,4 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+70,Weight Gain,1,child,part of,Diet Plans,,,,,,
+71,Weight Loss,1,child,part of,Diet Plans,,,,,,
+72,Immunity Booster,1,child,part of,Diet Plans,,,,,,

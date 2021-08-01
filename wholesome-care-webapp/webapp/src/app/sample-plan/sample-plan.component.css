@@ -1,0 +1,31 @@
+mat-card{
+  margin: 10px;
+  text-align: center;
+  
+
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+.plan-container{
+  margin:5rem 0;
+  width: 100%;
+}
+h1{
+  text-align: center;
+}
+.up{
+  padding-top: 5rem;
+
+}
+button{
+  color: #eee;
+  background-color: var(--primary-color);
+  margin-left: 2rem ;
+  margin-right: 2rem;
+}
+.container{
+  text-align: center;
+  background-image: url(../../assets/questionnaire/whiteWoodenBackground.jpg);
+  height: 89vh;
+}

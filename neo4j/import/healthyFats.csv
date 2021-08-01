@@ -1,0 +1,4 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+123,Coconut oil,32,child,part of,"Coconut oil, olive oil, avocados",,,,,,
+124,olive oil,32,child,part of,"Coconut oil, olive oil, avocados",,,,,,
+125,avocados,32,child,part of,"Coconut oil, olive oil, avocados",,,,,,

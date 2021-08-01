@@ -1,0 +1,30 @@
+<form [formGroup]="mentorDetails">
+    <mat-form-field appearance="fill">
+        <mat-label>About</mat-label>
+        <textarea matInput required formControlName="about"></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Certification</mat-label>
+        <textarea matInput required formControlName="certification"></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Training</mat-label>
+        <textarea matInput required formControlName="training"></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Experience</mat-label>
+        <textarea matInput required formControlName="experience"></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Language</mat-label>
+        <textarea matInput required formControlName="language"></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Specialities</mat-label>
+        <textarea matInput required formControlName="specialities"></textarea>
+    </mat-form-field>
+    <div mat-dialog-actions class="butoons" fxLayout="row" fxLayoutAlign="space-around center">
+        <button class="editProfileButton" [mat-dialog-close] = "mentorDetails.value">Update</button>
+        <button class="editProfileButton"  >cancel</button>
+    </div>
+</form>

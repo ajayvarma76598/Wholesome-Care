@@ -1,0 +1,122 @@
+Id:ID,name,quantity,unit,calorie,sugar,carbs,protein,imageUrl:String
+401,LukeWarm Water,2,Glass,0,0,0,0,ok
+402,black coffee,1,Cup,2,0,0,0.3,ok
+403,Lemon Water,1,Glass,0.5,0.1,0,0,ok
+404,Idli Sambhar,1,Plate,121.6,0.3,24.4,4.3,ok
+405,Multi grain Bread,4,Slices,335.6,1.7,11,3.4,ok
+406,Fresh fruits,3,Servings,200,16.3,24,1.4,ok
+407,dry fruits,4,Piece,132,50.8,34,1.4,ok
+408,green tea,1,Cup,1.3,0,0,0.5,ok
+409,Salad,2,Servings,19.5,2.2,4.2,1.5,ok
+410,Multigrain Chapati,2,Medium,120,1.2,18,3.1,ok
+411,Mix Daal,1,Bowl,222,4.5,34,14.2,ok
+412,mixed-vegetable curry,1,Bowl,0,2,0,28.3,ok
+413,brown rice,1,Bowl,131.1,0,0,2.3,ok
+414,Chickpea curry,1,Bowl,161.4,9.5,0,9.7,ok
+415,Mix Veg Soup,1,Bowl,15.6,4,0,3.7,ok
+416,Palak Paneer Pulao,1,Servings,400,4.8,0,17.5,ok
+417,chicken curry with mixed vegetables,1,Servings,400,4.6,0,30.1,ok
+418,Mix Veg Khichdi ,1,Servings,421.5,5.2,0,8.2,ok
+419,errrr,1,Servings,0,10,0,10,ok
+420,LukeWarm Water,2,Glass,0,0,0,0,ok
+421,Lemon Honey Water,1,Glass,0.14,17.4,0,0.1,ok
+422,Juice,1,Glass,128,28.9,0,0.3,ok
+423,black coffee,1,Cup,2,0,0,0.3,ok
+424,Lemon Water,1,Glass,0.5,0.1,0,0,ok
+425,Idli Sambhar,1,Plate,121.6,0.3,0,4.3,ok
+426,Multi grain Bread,2,Slices,69,1.7,0,3.4,ok
+427,Fresh fruits,4,Servings,200,16.3,0,1.4,ok
+428,eggs,2,Piece,72,0.2,0,6.3,ok
+429,dry fruits,10,Piece,132,50.8,0,1.4,ok
+430,green tea,1,Cup,1.3,0,0,0.5,ok
+431,flex seeds,1,Tablespoon,55,,0,,ok
+432,Curd,1,Bowl,4.8,5.3,0,3.9,ok
+433,Salad,3,Servings,19.5,2.2,0,1.5,ok
+434,Multigrain Chapati,2,Medium,120,1.2,0,3.1,ok
+435,Mix Daal,1,Bowl,222,4.5,0,14.2,ok
+436,Tofu,1,Cup,103,0.7,0,10,ok
+437,mixed-vegetable curry,1,Bowl,0,2,0,28.3,ok
+438,brown rice,1,Bowl,131.1,0,0,2.3,ok
+439,Chickpea curry,1,Bowl,161.4,9.5,0,9.7,ok
+440,Coconut Water,1,Glass,23,2.6,0,0.7,ok
+441,Sprouts,1,Bowl,22.8,0.2,0,4,ok
+442,Mix Veg Soup,1,Bowl,15.6,4,0,3.7,ok
+443,Palak Paneer Pulao,1,Servings,400,4.8,0,17.5,ok
+444,chicken curry with mixed vegetables,1,Servings,400,4.6,0,30.1,ok
+445,Mix Veg Khichdi ,1,Servings,421.5,5.2,0,8.2,ok
+446,turmeric milk,1,Glass,152,0.1,0,8.9,ok
+448,LukeWarm Water,2,Glass,0,0,0,0,ok
+449,Cumin water,1,Cup,8,0,0,0.4,ok
+450,Cinamon Water,1,Glass,10,0,0,0.4,ok
+451,Lemon Honey Water,1,Glass,0.14,17.4,0,0.1,ok
+452,Juice,1,Glass,114.4,28.9,0,0.3,ok
+453,black coffee,1,Cup,2,0,0,0.3,ok
+454,Lemon Water,1,Glass,0.5,0.1,0,0,ok
+455,protien drink,1,Glass,171,1.8,0,19.5,ok
+456,Idli Sambhar,1,Plate,121.6,0.3,0,4.3,ok
+457,MultiGrain Parathas,1,Medium,335.4,4.2,0,6.4,ok
+458,Oats with milk,1,Bowl,56,0.4,0,8.9,ok
+459,Multi grain Bread,2,Slices,69,1.7,0,3.4,ok
+460,Fresh fruits,5,Servings,200,16.3,0,1.4,ok
+461,eggs,3,Piece,72,0.2,0,6.3,ok
+462,dry fruits,10,Piece,132,50.8,0,1.4,ok
+463,green tea,1,Cup,1.3,0,0,0.5,ok
+464,flex seeds,1,Tablespoon,55,,0,,ok
+465,Curd,1,Bowl,4.8,5.3,0,3.9,ok
+466,Salad,4,Servings,19.5,2.2,0,1.5,ok
+467,Multigrain Chapati,2,Medium,120,1.2,0,3.1,ok
+468,Mix Daal,1,Bowl,222,4.5,0,14.2,ok
+469,Tofu,1,Bowl,103,0.7,0,10,ok
+470,mixed-vegetable curry,1,Bowl,0,2,0,28.3,ok
+471,brown rice,1,Bowl,131.1,0,0,2.3,ok
+472,Low Fat Dahi Chicken,1,Bowl,251,6,0,37.1,ok
+473,Chickpea curry,1,Bowl,161.4,9.5,0,9.7,ok
+474,Soya chunks,1,Bowl,336,,0,,ok
+475,Coconut Water,1,Glass,23,2.6,0,0.7,ok
+476,Sprouts,1,Bowl,22.8,0.2,0,4,ok
+477,Mix Veg Soup,1,Bowl,15.6,4,0,3.7,ok
+478,Palak Paneer Pulao,1,Servings,400,4.8,0,17.5,ok
+479,chicken curry with mixed vegetables,1,Servings,400,4.6,0,30.1,ok
+480,Mix Veg Khichdi ,1,Servings,421.5,5.2,0,8.2,ok
+481,Low Fat Butter Chicken,1,Bowl,355,6.7,0,23.3,ok
+482,turmeric milk,1,Glass,152,0.1,0,8.9,ok
+484,LukeWarm Water,2,Glass,0,0,0,0,ok
+485,Cumin water,1,Cup,8,0,0.9,0.4,ok
+486,apple cider vinegar,2,Tablespoon,3.1,0.1,0.1,0,ok
+487,Cinamon Water,1,Glass,10,0,2.8,0.4,ok
+488,Lemon Honey Water,1,Glass,0.14,17.4,0.03,0.1,ok
+489,yogurt ,1,Bowl,114.4,12,12.8,9,ok
+490,Juice,1,Glass,128,28.9,31,0.3,ok
+491,black coffee,1,Cup,2,0,0,0.3,ok
+492,Lemon Water,1,Glass,0.5,0.1,0,0,ok
+493,protien drink,1,Glass,171,1.8,2.5,19.5,ok
+494,Idli Sambhar,1,Plate,121.6,0.3,24.4,4.3,ok
+495,MultiGrain Parathas,1,Medium,335.4,4.2,46.8,6.4,ok
+496,Oats with milk,1,Bowl,0,0.4,,8.9,ok
+497,Multi grain Bread,4,Slices,69,1.7,11,3.4,ok
+498,Fresh fruits,3,Servings,97,16.3,24,1.4,ok
+499,eggs,2,Piece,72,0.2,0.4,6.3,ok
+500,dry fruits,10,Piece,132,50.8,34,1.4,ok
+501,green tea,1,Cup,1.3,0,0,0.5,ok
+502,flex seeds,1,Tablespoon,55,,3,,ok
+503,Curd,1,Bowl,4.8,5.3,62.4,3.9,ok
+504,Salad,2,Servings,19.5,2.2,4.2,1.5,ok
+505,Multigrain Chapati,2,Medium,120,1.2,18,3.1,ok
+506,Mix Daal,1,Bowl,222,4.5,34,14.2,ok
+507,Tofu,1,Bowl,103,0.7,1.5,10,ok
+508,mixed-vegetable curry,1,Bowl,0,2,,28.3,ok
+509,brown rice,1,Bowl,131.1,0,27.6,2.3,ok
+510,Low Fat Dahi Chicken,1,Bowl,251,6,4,37.1,ok
+511,Chickpea curry,1,Bowl,161.4,9.5,27,9.7,ok
+512,Soya chunks,1,Bowl,336,,29,,ok
+513,Coconut Water,1,Glass,23,2.6,4.5,0.7,ok
+514,Sprouts,1,Bowl,22.8,0.2,2.1,4,ok
+515,Mix Veg Soup,1,Bowl,15.6,4,95.4,3.7,ok
+516,Palak Paneer Pulao,1,Servings,400,4.8,39,17.5,ok
+517,chicken curry with mixed vegetables,1,Servings,0,4.6,,30.1,ok
+518,Mix Veg Khichdi ,1,Servings,421.5,5.2,81,8.2,ok
+519,Low Fat Butter Chicken,1,Bowl,355,6.7,14,23.3,ok
+520,Quinoa,1,Bowl,111,0.8,20,4.1,ok
+521,Kidney Beans,1,Bowl,225,0.6,40,15.5,ok
+522,Chopped Mushrooms,1,Servings,3.4,0.3,0.6,0.3,ok
+523,turmeric milk,1,Glass,152,0.1,11.65,8.9,ok

@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="card">
+    <form *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+      <div class="login-title">Log In</div>
+      <div class="formbox">
+
+        <mat-form-field class="example-full-width">
+          <mat-label for="username">Email</mat-label>
+          <input type="text" matInput name="username" [(ngModel)]="form.username" required #username="ngModel"
+            placeholder="Email">
+          <mat-error *ngIf="f.submitted && username.invalid">Username is required!</mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label for="password">Password</mat-label>
+          <input type="password" matInput name="password" [(ngModel)]="form.password" required minlength="6"
+            #password="ngModel" placeholder="password">
+          <mat-error *ngIf="f.submitted && password.invalid">Password is required! </mat-error>
+
+        </mat-form-field>
+
+        <div class="example-button-row">
+          <button class="btn">Login</button>
+          <a routerLink="/register" > <mat-label >Not Register?</mat-label></a>
+        </div>
+        <div>
+          <mat-error *ngIf="isLoginFailed">Login failed: {{ errorMessage }}></mat-error>
+
+
+        </div>
+
+        <p>or</p>
+        <mat-divider></mat-divider>
+
+        <div class="social-login">
+
+          <h2> Log in with:</h2>
+
+          <a href="{{ googleURL }}" class="ml-2">
+            <img alt="Login with Google" src="/assets/img/google.png" class="btn-img">
+          </a>
+        </div>
+
+        <!-- <mat-toolbar>
+    
+            <button (click)="forgetPassword()" mat-raised-button color="primary" >Forget</button>
+      
+          </mat-toolbar> -->
+      </div>
+    </form>
+
+    
+
+    <!-- <button (click)="forgetPassword()" mat-raised-button color="primary" >Forget</button> -->
+
+
+
+		<!-- <div class="alert alert-success" *ngIf="isLoggedIn">Welcome {{currentUser.displayName}} <br>Logged in as {{ currentUser.role }}.</div> -->
+	</div>
+
+    <div class="alert alert-success" *ngIf="isLoggedIn">Welcome {{currentUser.displayName}} <br>Logged in as {{
+      currentUser.role }}.</div>
+  </div>
+

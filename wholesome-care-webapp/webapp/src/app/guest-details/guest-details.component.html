@@ -1,0 +1,80 @@
+
+    <form [formGroup]="checkoutForm" >
+      <p>
+        <mat-toolbar >
+          <span >User Details</span>
+        </mat-toolbar>
+      </p>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input type="text" matInput placeholder="Enter Name*" formControlName="name">
+          <mat-error *ngIf="checkoutForm.get('name').invalid && (checkoutForm.get('name').dirty || checkoutForm.get('name').touched)">
+            <mat-error *ngIf="checkoutForm.get('name').errors?.required">Name is required field.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="text" matInput placeholder="Email" formControlName="email">
+          <mat-error
+            *ngIf="checkoutForm.get('email').invalid && (checkoutForm.get('email').dirty || checkoutForm.get('email').touched)">
+            <mat-error *ngIf="checkoutForm.get('email').errors?.required">Email is required field.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Mobile Number</mat-label>
+          <input type="text" matInput placeholder="Mobile Number" formControlName="contact">
+          <mat-error
+            *ngIf="checkoutForm.get('contact').invalid && (checkoutForm.get('contact').dirty || checkoutForm.get('contact').touched)">
+            <mat-error *ngIf="checkoutForm.get('contact').errors?.required">Mobile number is required field.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>City</mat-label>
+          <mat-select formControlName="city">
+            <mat-option value="Delhi">Delhi</mat-option>
+            <mat-option value="vizag">vizag</mat-option>
+            <mat-option value="Itanagar">Itanagar</mat-option>
+            <mat-option value="Dispur">Dispur</mat-option>
+            <mat-option value="Patna">Patna</mat-option>
+            <mat-option value="Raipur">Raipur</mat-option>
+            <mat-option value="Panaji">Panaji</mat-option>
+            <mat-option value="Gandhinagar">Gandhinagar</mat-option>
+            <mat-option value="Chandigarh">Chandigarh</mat-option>
+            <mat-option value="Shimla">Shimla</mat-option>
+            <mat-option value="Ranchi">Ranchi</mat-option>
+            <mat-option value="Banglore">Banglore</mat-option>
+            <mat-option value="Thiruvananthapuram">Thiruvananthapuram</mat-option>
+            <mat-option value="Bhopal">Bhopal</mat-option>
+            <mat-option value="Mumbai">Mumbai</mat-option>
+            <mat-option value="Imphal">Imphal</mat-option>
+            <mat-option value="Shillong">Shillong</mat-option>
+            <mat-option value="Aizwal">Aizwal</mat-option>
+            <mat-option value="Kohima">Kohima</mat-option>
+            <mat-option value="Bhuvaneswar">Bhuvaneswar</mat-option>
+            <mat-option value="Jaipur">Jaipur</mat-option>
+            <mat-option value="Gangtok">Gangtok</mat-option>
+            <mat-option value="Chennai">Chennai</mat-option>
+            <mat-option value="Hyderabad">Hyderabad</mat-option>
+            <mat-option value="Agartala">Agartala</mat-option>
+            <mat-option value="Lucknow">Lucknow</mat-option>
+            <mat-option value="Dehradun">Dehradun</mat-option>
+            <mat-option value="Kolkata">Kolkata</mat-option>
+            <mat-option value="New Delhi">New Delhi</mat-option>
+          </mat-select>
+          <mat-error
+            *ngIf="checkoutForm.get('city').invalid && (checkoutForm.get('city').dirty || checkoutForm.get('city').touched)">
+            <mat-error *ngIf="checkoutForm.get('city').errors?.required">city is required field.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="button">
+        <button  mat-raised-button background-color="var(--primary-color)" mat-dialog-close="true" (click)="saveGuestDetails();openDialog()">submit</button>
+      </div>
+    </form>

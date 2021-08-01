@@ -1,0 +1,165 @@
+<div class="page">
+  <mat-spinner *ngIf="!userDetails"></mat-spinner>
+  <div *ngIf="userDetails" class="tileFirst" fxLayout="column" fxLayoutAlign="center center">
+    <!-- nav bar for dashboard -->
+    <div class="dashboard" fxLayout="row" fxLayoutAlign.lt-md="center center" fxLayoutAlign="end center">
+      <!-- <span><a routerLink="home" routerLinkActive="active" ><img src="../../assets/images/logofinal.png" alt=""></a></span> -->
+      <div fxLayout="row" class="profilePlanButton" fxLayoutAlign="space-around center">
+       <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center" fxLayoutAlign="space-around center"></div>
+        <button (click)="showPlan()" class="buttonDashboard">View Your Customized Plan</button>
+        <button class="buttonDashboard" (click)="showProfile()">Profile</button>
+        <!-- <button class="button" *ngIf="isLoggedIn" (click)="logout()">LogOut</button> -->
+        <span class="bell-icon" (click)="showNotification()" *ngIf="recievedNotification" matBadge="1"
+          matBadgeSize="large"><i class="fas fa-bell"></i></span>
+        <i *ngIf="!recievedNotification" class="fas fa-bell"></i>
+      </div>
+    </div>
+    <!-- show about the user  -->
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="center center">
+
+      <div class="userProfiledata" fxLayout="row " fxLayout.lt-md="column" fxLayoutAlign.lt-md="center center"
+        fxLayoutAlign="start center">
+        <div class="date"></div>
+        <mat-card class="introCard" fxLayout="column" fxLayoutAlign.lt-md="center center" fxLayoutAlign="center start">
+          <h1 class="noday" fxLayout="row" fxLayout.Align="start stretch">Day - {{dayToday}}({{todayDate}})</h1>
+          <h1 class="wellcome">Welcome {{userDetails.name}}</h1>
+          <div>
+            <a (click)='openListFollowers()'>{{followersLength}} followers</a>
+            |
+            <a (click)='openListFollowing()'>{{followingLength}} following</a>
+          </div>
+        </mat-card>
+        <mat-card fxLayout.xs="column" fxLayout="row" class="levels">
+          <div fxLayout="column" fxLayoutAlign="center center" class="mat-list-level">
+            <span>Physical Wellness Level</span>
+            <div class="belts">
+              <!-- <mat-list *ngFor='let beltColor of beltColors'>
+              <mat-card class="belt" [ngStyle]="{'background-color':beltColor}"
+                [class.levelMatched]='beltColor===userDetails.physicalLevel'>{{beltColor}}</mat-card>
+            </mat-list> -->
+              <div style="display: block" class="chart-wrapper">
+                <canvas baseChart class="chart" [datasets]="datasets" [labels]="labels" [options]="options"
+                  [chartType]="'doughnut'" height="100px" width="100px">
+                </canvas>
+                <div class="level" [ngStyle]="{'background-color':userDetails.physicalLevel}"></div>
+                <span class="level score">{{userDetails.physicalScore}} %</span>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column" fxLayoutAlign="center center" class="mat-list-level">
+            <span>Mental Wellness Level</span>
+            <div class="belts">
+              <!-- <mat-list *ngFor='let beltColor of beltColors'>
+              <mat-card class="belt" [ngStyle]="{'background-color':beltColor}"
+                [class.levelMatched]='beltColor===userDetails.physicalLevel'>{{beltColor}}</mat-card>
+            </mat-list> -->
+              <div style="display: block" class="chart-wrapper">
+                <canvas baseChart class="chart" [datasets]="datasets" [labels]="labels" [options]="options"
+                  [chartType]="'doughnut'" height="100px" width="100px">
+                </canvas>
+                <div class="level" [ngStyle]="{'background-color':userDetails.mentalLevel}"></div>
+                <span class="level score">{{userDetails.mentalScore}} %</span>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column" fxLayoutAlign="center center" class="mat-list-level">
+            <span>Diet Wellness Level</span>
+            <div class="belts">
+              <!-- <mat-list *ngFor='let beltColor of beltColors'>
+                <mat-card class="belt" [ngStyle]="{'background-color':beltColor}"
+                  [class.levelMatched]='beltColor===userDetails.physicalLevel'>{{beltColor}}</mat-card>
+              </mat-list> -->
+              <div style="display: block" class="chart-wrapper">
+                <canvas baseChart class="chart" [datasets]="datasets" [labels]="labels" [options]="options"
+                  [chartType]="'doughnut'" height="100px" width="100px">
+                </canvas>
+                <div class="level" [ngStyle]="{'background-color':userDetails.dietLevel}"></div>
+                <span class="level score">{{userDetails.dietScore}} %</span>
+              </div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+    <div>
+    </div>
+    <div class="todoSection" *ngIf="userDetails" fxLayout="column" fxLayoutAlign="center start">
+      <h1 class="heading">Track Your Daily Activity</h1>
+      <div cdkDropListGroup fxLayout="row" fxLayoutAlign="center center" fxLayoutAlign.lt-md="start center"
+        class="taskDone">
+
+        <div class="todo-box">
+          <h2>To do</h2>
+          <div class="scrollbox">
+            <div cdkDropList [cdkDropListData]="todo" class="activities-items" (cdkDropListDropped)="drop($event)"
+              fxLayout="column" fxLayoutAlign="start center">
+              <app-activity-card class="activity-box" *ngFor="let item of todo" [activity]="item" cdkDrag>
+              </app-activity-card>
+            </div>
+          </div>
+        </div>
+        <div class="done-task-box">
+          <mat-icon *ngIf='!updated' class="addIcon" title="Save your today's activities." (click)="updateProfile()">add_circle_outline
+          </mat-icon>
+          <mat-icon *ngIf="doneTaskActivities!=null || updated==true" class="addIcon" title="Want to inform others with your done task."
+            (click)="notifyOthersWihYourTaskDone()">notifications</mat-icon>
+          <h2>Done</h2>
+          <div cdkDropList [cdkDropListData]="done" class="activities-items" (cdkDropListDropped)="drop($event)"
+            fxLayout="column" fxLayoutAlign="start center">
+            <app-activity-card class="activity-box" *ngFor="let item of done" [activity]="item" cdkDrag>
+            </app-activity-card>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="userDietPlan">
+      <h1 class="heading">Track Your Diet</h1>
+      <app-food-list [dietPlan]="userDetails.plan.diet_plan"></app-food-list>
+    </div>
+    <div fxLayout="column" fxLayoutAlign = "center center" class="suggestion">
+      <h1 class="heading">You can follow them</h1>
+      <div class="suggestion-list" fxLayout="row" fxLayoutAlign="center center" fxLayoutAlign.lt-md="start center">
+        <ng-container *ngFor="let suggestion of suggestions let i=index" >
+          <app-user-card *ngIf='i>=lowestIndex && i<greatestIndex' (increaseCounterOfFollow)='this.emittedData($event)' [suggestion]="suggestion"
+            [fromEmail]="userDetails.email" class="user-card"></app-user-card>
+        </ng-container>
+      </div>
+      <div class="suggestion-button">
+        <button class="button" [disabled]="lowestIndex==0" (click)="viewPrev()" mat-raised-button >Previous</button>
+        <button class="button" [disabled]="greatestIndex>=suggestionLength || suggestionLength==0" (click)="viewMore()" mat-raised-button>More</button>
+      </div>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+      <div class="waterTracking" fxLayout="row" fxLayoutAlign="space-between center">
+        <div class="progressGlassIntake" fxLayout="column" fxLayoutAlign="center center" fxFill.xs="100%">
+          <h1>Let's track your water intake: </h1>
+          <mat-card class="spinTracker">
+            <mat-progress-spinner class="front-spinner" [value]='waterIntake'></mat-progress-spinner>
+            <mat-progress-spinner class="back-spinner" [value]='100'></mat-progress-spinner>
+            <mat-icon class="water-icon">local_drink</mat-icon>
+          </mat-card>
+          <div class="buttons" fxLayout="row" fxLayoutAlign="space-around center">
+            <button mat-fab class="minus-water" (click)="minusWater()"><i class="fas fa-minus"></i></button>
+            <button mat-fab class="add-water" (click)="addWater()"><i class="fa fa-plus"></i></button>
+          </div>
+          <span>{{waterGlass}} glasses of water you have consumed</span>
+        </div>
+      </div>
+      <div class="waterTracking" fxLayout="row" fxLayoutAlign="space-between center">
+        <div class="progressGlassIntake" fxLayout="column" fxLayoutAlign="center center" fxFill.xs="100%">
+          <h1>Let's track your Sleep: </h1>
+          <mat-card class="spinTracker">
+            <mat-progress-spinner class="front-spinner" [value]='sleep'></mat-progress-spinner>
+            <mat-progress-spinner class="back-spinner" [value]='100'></mat-progress-spinner>
+            <mat-icon class="water-icon">bed</mat-icon>
+          </mat-card>
+          <div class="buttons" fxLayout="row" fxLayoutAlign="space-around center">
+            <button mat-fab class="minus-water" (click)="minusSleep()"><i class="fas fa-minus"></i></button>
+            <button mat-fab class="add-water" (click)="addSleep()"><i class="fa fa-plus"></i></button>
+          </div>
+          <span>{{hourSleep}} hours of sleep you have taken today</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

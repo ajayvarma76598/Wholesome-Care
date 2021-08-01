@@ -1,0 +1,216 @@
+table {
+    width: 100%;
+}
+
+.cio {
+    margin: 5px 15px;
+    padding: 10px;
+    border: solid #003539;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: medium;
+}
+
+p mat-toolbar {
+    background-color: var(--primary-color);
+    color: #eee;
+}
+
+.icon {
+    float: right;
+}
+
+.chatBot {
+    margin: 0;
+    display: flex;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: row;
+}
+
+.neu {
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+    background: #e0e5ec;
+    justify-content: space-around;
+    border-radius: 25px;
+    box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
+}
+
+.headingN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003539;
+    margin: 0rem 0rem 0rem 0rem;
+    height: 40px;
+    border-radius: 25px;
+    color: #e0e5ec;
+}
+
+.inputr {
+    float: left;
+}
+
+.inr {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ibox {
+    margin-top: 10px;
+}
+
+.formc {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bodi {
+    color: #003539;
+    margin: 10px 5px;
+    padding: auto;
+}
+
+.chatBot form {
+    /* margin-top: 35vh; */
+    /* position: fixed; */
+    margin: 5px;
+}
+
+.mat-form-field {
+    width: 95%;
+}
+
+
+/* button {
+    background-color: var(--primary-color);
+    color: #eee;
+} */
+
+.container {
+    /* padding-top: 6rem; */
+    padding: 3rem;
+    height: auto;
+    width: auto;
+    min-height: 60vh;
+    background: #e0e5ec;
+    margin-top: 10px;
+}
+
+.xcv {
+    background: #e0e5ec;
+    border-radius: 25px;
+}
+
+.bods {
+    color: #003539;
+    margin: 5px;
+    padding: auto;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.buttp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.mat-column-Food-Name {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.mat-column-Amount {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.mat-column-Sugar {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.mat-column-Total-Fat {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+
+/* .mat-column-Cholesterol {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+} */
+
+.mat-column-Protein {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.mat-column-Carbohydrates {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.mat-column-Calorie {
+    width: 32px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.mat-column-Activity-Name {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+}
+
+.mat-column-Time-Duration {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+}
+
+.mat-column-Time-Unit {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+}
+
+.mat-column-Calorie-Burnt {
+    width: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+}

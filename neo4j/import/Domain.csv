@@ -1,0 +1,2 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,effectOnWeight,benefit
+41,Wellness,0,super parent,super parent,Wholesome care,,,,,,,

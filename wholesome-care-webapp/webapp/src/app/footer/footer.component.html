@@ -1,0 +1,55 @@
+<footer class="footer container ">
+  <div class="row ">
+    <div class="column aboutus">
+      <h2>About us</h2>
+      <p>Wholesome Care is an Indian digital health and wellness platform that provides services such as calorie
+        tracking, nutrition bot, BMI calculation, mental motivations and fitness coaching, and diet and workout plans. Developed for browser, it
+        takes a holistic lifestyle tracking approach to keep users engaged and motivated.
+      </p>
+      <div class="social-menu">
+        <ul class="footer-list">
+          <li><a href="https://www.facebook.com/Wholesome-Care-105353618501033/">
+              <div class="icon-box"><img src="../../assets/icons/facebook.svg" alt="facebook icon"></div>
+            </a></li>
+          <li><a href="https://twitter.com/CareWholesome">
+              <div class="icon-box"><img src="../../assets/icons/twitter.svg" alt="twitter icon"></div>
+            </a></li>
+          <li><a href="https://www.youtube.com/channel/UCJDAUPMG-4lstV4IyiakLlA">
+              <div class="icon-box"><img src="../../assets/icons/youtube.svg" alt="youtube icon"></div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="column quick-link">
+      <h2>Quick Link</h2>
+      <ul>
+        <li><a [routerLink]="['/mentors/'+1]" routerLinkActive="active">Dietician</a></li>
+        <li><a [routerLink]="['/mentors/'+2]" routerLinkActive="active">Trainer</a></li>
+        <li><a [routerLink]="['/mentors/'+3]" routerLinkActive="active">Yoga</a></li>
+        <li><a routerLink="/blogs" routerLinkActive="active">Blogs</a></li>
+      </ul>
+    </div>
+    <div class="column contact">
+      <h2>Contact Info</h2>
+      <ul class="info">
+        <li><span>
+            <mat-icon class="location">location_on</mat-icon>
+          </span>
+          <span>117, Opposite Raheja Arcade,<br> 7th Block, Koramangala<br>Bengaluru, Karnataka- 560095<br>India</span>
+        </li>
+        <li><span>
+            <mat-icon class="location">phone</mat-icon>
+          </span>
+          <p><a href="tel:912345678912">+91 2345678912</a><br>
+            <a href="tel:912345678900">+91 2345678900</a>
+          </p>
+        </li>
+        <li><span>
+            <mat-icon class="location">email</mat-icon>
+          </span>
+          <p><a href="mailto:wholesomecare2021@gmail.com">wholesomecare2021@gmail.com</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

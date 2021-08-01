@@ -1,0 +1,181 @@
+LOAD CSV WITH HEADERS FROM "file:///Domain.csv" AS csvLine
+CREATE (:Domain {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///subDomain.csv" AS csvLine
+CREATE (:subDomain {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///Service.csv" AS csvLine
+CREATE (:Service {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///categoryOfDietPlan.csv" AS csvLine
+CREATE (:categoryOfDietPlan {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///weightGainFoodClassification.csv" AS csvLine
+CREATE (:weightGainFoodClassification {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///weightGainByNonVeg.csv" AS csvLine
+CREATE (:weightGainByNonVeg {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///weightGainByVeg.csv" AS csvLine
+CREATE (:weightGainByVeg {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///WeightLossFoodClassification.csv" AS csvLine
+CREATE (:weightLossFoodClassification {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///weightLossByVeg.csv" AS csvLine
+CREATE (:weightLossByVeg {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///weightLossByNonVeg.csv" AS csvLine
+CREATE (:weightLossByNonVeg {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///immunityFoodClassification.csv" AS csvLine
+CREATE (:immunityFoodClassification {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///vegImmunity.csv" AS csvLine
+CREATE (:vegImmunity {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///NonVegImmunity.csv" AS csvLine
+CREATE (:NonVegImmunity {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///differentActivities.csv" AS csvLine
+CREATE (:differentActivities {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///aerobicExercises.csv" AS csvLine
+CREATE (:aerobicExercises {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///anaerobicExercises.csv" AS csvLine
+CREATE (:anaerobicExercises {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///FlexibilityExercises.csv" AS csvLine
+CREATE (:FlexibilityExercises {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///MuscleStrengtheningExercises.csv" AS csvLine
+CREATE (:MuscleStrengtheningExercises {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///yogaForms.csv" AS csvLine
+CREATE (:yogaForms {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///danceForms.csv" AS csvLine
+CREATE (:danceForms {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///fruits.csv" AS csvLine
+CREATE (:fruits {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///vegetables.csv" AS csvLine
+CREATE (:vegetables {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///dairyProducts.csv" AS csvLine
+CREATE (:dairyProducts {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///grains.csv" AS csvLine
+CREATE (:grains {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///legumes.csv" AS csvLine
+CREATE (:legumes {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///otherIngredients.csv" AS csvLine
+CREATE (:otherIngredients {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///nuts.csv" AS csvLine
+CREATE (:nuts {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///seeds.csv" AS csvLine
+CREATE (:seeds {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///healthyFats.csv" AS csvLine
+CREATE (:healthyFats {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///meat.csv" AS csvLine
+CREATE (:meat {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///poultry.csv" AS csvLine
+CREATE (:poultry {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///fish.csv" AS csvLine
+CREATE (:fish {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///meatBasedIngredients.csv" AS csvLine
+CREATE (:meatBasedIngredients {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+LOAD CSV WITH HEADERS FROM "file:///otherProducts.csv" AS csvLine
+CREATE (:otherProducts {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description,breakfast:csvLine.breakfast,lunch:csvLine.lunch,dinner:csvLine.dinner,miscellaneous:csvLine.miscellaneous,noOftimes:csvLine.noOfTimes,effectOnWeight:csvLine.effectOnWeight,benefit:csvLine.benefit})
+
+
+MATCH (subDomain:subDomain) MATCH (Domain:Domain) WHERE Domain.Id = subDomain.parentId MERGE (subDomain)-[:subDomain_of]->(Domain)
+
+MATCH (Service:Service) MATCH (subDomain:subDomain) WHERE subDomain.Id = Service.parentId MERGE (Service)-[:Service_of]->(subDomain)
+
+MATCH (categoryOfDietPlan:categoryOfDietPlan) MATCH (Service:Service) WHERE Service.Id = categoryOfDietPlan.parentId MERGE (categoryOfDietPlan)-[:category_of]->(Service)
+
+MATCH (differentActivities:differentActivities) MATCH (Service:Service) WHERE Service.Id = differentActivities.parentId MERGE (differentActivities)-[:type_of]->(Service)
+
+MATCH (weightGainFoodClassification:weightGainFoodClassification) MATCH (categoryOfDietPlan:categoryOfDietPlan) WHERE categoryOfDietPlan.Id = weightGainFoodClassification.parentId MERGE (weightGainFoodClassification)-[:purpose_of]->(categoryOfDietPlan)
+
+MATCH (weightLossFoodClassification:weightLossFoodClassification) MATCH (categoryOfDietPlan:categoryOfDietPlan) WHERE categoryOfDietPlan.Id = weightLossFoodClassification.parentId MERGE (weightLossFoodClassification)-[:purpose_of]->(categoryOfDietPlan)
+
+MATCH (immunityFoodClassification:immunityFoodClassification) MATCH (categoryOfDietPlan:categoryOfDietPlan) WHERE categoryOfDietPlan.Id = immunityFoodClassification.parentId MERGE (immunityFoodClassification)-[:purpose_of]->(categoryOfDietPlan)
+
+MATCH (weightGainByNonVeg:weightGainByNonVeg) MATCH (weightGainFoodClassification:weightGainFoodClassification) WHERE weightGainFoodClassification.Id = weightGainByNonVeg.parentId MERGE (weightGainByNonVeg)-[:type_of]->(weightGainFoodClassification)
+
+MATCH (weightGainByVeg:weightGainByVeg) MATCH (weightGainFoodClassification:weightGainFoodClassification) WHERE weightGainFoodClassification.Id = weightGainByVeg.parentId MERGE (weightGainByVeg)-[:type_of]->(weightGainFoodClassification)
+
+MATCH (weightLossByVeg:weightLossByVeg) MATCH (weightLossFoodClassification:weightLossFoodClassification) WHERE weightLossFoodClassification.Id = weightLossByVeg.parentId MERGE (weightLossByVeg)-[:type_of]->(weightLossFoodClassification)
+
+MATCH (vegImmunity:vegImmunity) MATCH (immunityFoodClassification:immunityFoodClassification) WHERE immunityFoodClassification.Id = vegImmunity.parentId MERGE (vegImmunity)-[:type_of]->(immunityFoodClassification)
+
+MATCH (NonVegImmunity:NonVegImmunity) MATCH (immunityFoodClassification:immunityFoodClassification) WHERE immunityFoodClassification.Id = NonVegImmunity.parentId MERGE (NonVegImmunity)-[:type_of]->(immunityFoodClassification)
+
+MATCH (aerobicExercises:aerobicExercises) MATCH (differentActivities:differentActivities) WHERE differentActivities.Id = aerobicExercises.parentId MERGE (aerobicExercises)-[:type_of]->(differentActivities)
+
+MATCH (anaerobicExercises:anaerobicExercises) MATCH (differentActivities:differentActivities) WHERE differentActivities.Id = anaerobicExercises.parentId MERGE (anaerobicExercises)-[:type_of]->(differentActivities)
+
+MATCH (FlexibilityExercises:FlexibilityExercises) MATCH (differentActivities:differentActivities) WHERE differentActivities.Id = FlexibilityExercises.parentId MERGE (FlexibilityExercises)-[:type_of]->(differentActivities)
+
+MATCH (MuscleStrengtheningExercises:MuscleStrengtheningExercises) MATCH (differentActivities:differentActivities) WHERE differentActivities.Id = MuscleStrengtheningExercises.parentId MERGE (MuscleStrengtheningExercises)-[:type_of]->(differentActivities)
+
+MATCH (yogaForms:yogaForms) MATCH (differentActivities:differentActivities) WHERE differentActivities.Id = yogaForms.parentId MERGE (yogaForms)-[:type_of]->(differentActivities)
+
+MATCH (danceForms:danceForms) MATCH (differentActivities:differentActivities) WHERE differentActivities.Id = danceForms.parentId MERGE (danceForms)-[:type_of]->(differentActivities)
+
+MATCH (fruits:fruits) MATCH (vegImmunity:vegImmunity) WHERE vegImmunity.Id = fruits.parentId MERGE (fruits)-[:is_a]->(vegImmunity)
+
+MATCH (vegetables:vegetables) MATCH (vegImmunity:vegImmunity) WHERE vegImmunity.Id = vegetables.parentId MERGE (vegetables)-[:is_a]->(vegImmunity)
+
+MATCH (dairyProducts:dairyProducts) MATCH (NonVegImmunity:NonVegImmunity) WHERE NonVegImmunity.Id = dairyProducts.parentId MERGE (dairyProducts)-[:is_a]->(NonVegImmunity)
+
+MATCH (nuts:nuts) MATCH (weightGainByVeg:weightGainByVeg) WHERE weightGainByVeg.Id = nuts.parentId MERGE (nuts)-[:is_a]->(weightGainByVeg)
+
+MATCH (seeds:seeds) MATCH (weightGainByVeg:weightGainByVeg) WHERE weightGainByVeg.Id = seeds.parentId MERGE (seeds)-[:is_a]->(weightGainByVeg)
+
+MATCH (healthyFats:healthyFats) MATCH (weightGainByVeg:weightGainByVeg) WHERE weightGainByVeg.Id = healthyFats.parentId MERGE (healthyFats)-[:is_a]->(weightGainByVeg)
+
+MATCH (grains:grains) MATCH (weightLossByVeg:weightLossByVeg) WHERE weightLossByVeg.Id = grains.parentId MERGE (grains)-[:is_a]->(weightLossByVeg)
+
+MATCH (legumes:legumes) MATCH (weightLossByVeg:weightLossByVeg) WHERE weightLossByVeg.Id = legumes.parentId MERGE (legumes)-[:is_a]->(weightLossByVeg)
+
+MATCH (otherIngredients:otherIngredients) MATCH (weightLossByVeg:weightLossByVeg) WHERE weightLossByVeg.Id = otherIngredients.parentId MERGE (otherIngredients)-[:is_a]->(weightLossByVeg)
+
+MATCH (fish:fish) MATCH (weightLossByNonVeg:weightLossByNonVeg) WHERE weightLossByNonVeg.Id = fish.parentId MERGE (fish)-[:is_a]->(weightLossByNonVeg)
+
+MATCH (meatBasedIngredients:meatBasedIngredients) MATCH (weightLossByNonVeg:weightLossByNonVeg) WHERE weightLossByNonVeg.Id = meatBasedIngredients.parentId MERGE (meatBasedIngredients)-[:is_a]->(weightLossByNonVeg)
+
+MATCH (otherProducts:otherProducts) MATCH (weightLossByNonVeg:weightLossByNonVeg) WHERE weightLossByNonVeg.Id = otherProducts.parentId MERGE (otherProducts)-[:is_a]->(weightLossByNonVeg)
+
+MATCH (meat:meat) MATCH (weightGainByNonVeg:weightGainByNonVeg) WHERE weightGainByNonVeg.Id = meat.parentId MERGE (meat)-[:is_a]->(weightGainByNonVeg)
+
+MATCH (poultry:poultry) MATCH (weightGainByNonVeg:weightGainByNonVeg) WHERE weightGainByNonVeg.Id = poultry.parentId MERGE (poultry)-[:is_a]->(weightGainByNonVeg)
+
+
+MATCH p=()-->() RETURN p LIMIT 100
+
+
+
+
+
+
+
+
+
+
+
+

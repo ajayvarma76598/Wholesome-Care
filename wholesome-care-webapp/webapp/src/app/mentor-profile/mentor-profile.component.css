@@ -1,0 +1,75 @@
+.container{
+    /* margin: 0 3em; */
+    background-image: url(../../assets/questionnaire/whiteWoodenBackground.jpg);
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5rem;
+}
+
+.image-box{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 2rem;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 70%);
+    border-radius: 50%;
+}
+.image-box img {
+    width: 100%;
+    /* height: 100%; */
+}
+.detail .name{
+    font-family: var(--heading-font-family);
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--primary-color);
+    opacity: .8;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+.detail .expertize{
+    font-family: var(--heading-font-family);
+    font-size: 1.5em;
+    font-weight: 500;
+    color:rgba(0, 0, 0, 0.7);
+}
+mat-icon{
+    color: goldenrod;
+}
+.discription{
+    margin-left: 5rem;
+    margin-bottom: 8rem;
+}
+.discription h3{
+    font-family: var(--heading-font-family);
+    font-size: 2.2em;
+    font-weight: 600;
+    color: var(--secondary-color);
+    opacity: .8;
+    margin-top: 1.5em;
+}
+.discription h4{
+    font-family: var(--heading-font-family);
+    font-size: 1.8em;
+    font-family: 500;
+    color: var(--tertiary-color);
+    opacity: .8;
+    margin-left: 1.5em;
+    margin-top: 1.3em;
+}
+.discription .qualification p{
+    margin-left: 3em;
+}
+.discription p{
+    font-family: var(--body-font-family);
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-left:1em ;
+}
+.profile{
+    width: 90%;
+    max-width: 500px;
+    min-width: 300px;
+}
+

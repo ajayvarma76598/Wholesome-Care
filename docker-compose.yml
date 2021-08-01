@@ -1,0 +1,232 @@
+version: "3"
+services:
+  eureka-server:
+    build: eureka-server/
+    container_name: eureka-server
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8076:8076
+  api-gateway:
+    build: api-gateway/
+    container_name: api-gateway
+    depends_on:
+      - eureka-server
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8086:8086
+  wholesome-care-webapp:
+    build: wholesome-care-webapp/
+    image: wholesome-care-webapp
+    depends_on:
+      - eureka-server
+      - api-gateway
+    restart: always
+    container_name: wholesome-care-webapp
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - "8099:8099"
+  mysql:
+    image: mysql
+    container_name: mysql
+    network_mode: "host"
+    hostname: localhost
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: user
+      MYSQL_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - ./mysql_data_container:/data/db
+    ports:
+      - 3306:3306
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    volumes:
+      - $HOME/data/db:/data/db
+    ports:
+      - 27017:27017
+  neo4j:
+    image: neo4j:latest
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    restart: always
+    environment:
+      - NEO4J_AUTH=neo4j/test
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_apoc_import_file_enabled=true
+      - NEO4J_dbms_shell_enabled=true
+    volumes:
+      - ./plugins:/plugins
+      - $HOME/neo4j/data:/data
+      - ./import:/import
+  rabbitmq:
+    image: rabbitmq:3.7.5-management
+    hostname: localhost
+    network_mode: "host"
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - $HOME/data/rabbitmq:/var/lib/rabbitmq/mnesia/rabbit@app-rabbitmq:cached
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_DEFAULT_VHOST:
+  graph-command-service:
+    build: graph-command-service/
+    container_name: graph-command-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - neo4j
+      - rabbitmq
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 9092:9092
+  graph-query-service:
+    build: graph-query-service/
+    container_name: graph-query-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - neo4j
+      - rabbitmq
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8097:8097
+  user-service:
+    build: user-service/
+    container_name: user-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - mongo
+      - rabbitmq
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8082:8082
+  user-auth-service:
+    build: user-auth-service/
+    container_name: user-auth-service
+    restart: always
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - mysql
+      - rabbitmq
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8080:8080
+  nlp-service:
+    build: nlp-service/
+    container_name: nlp-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8098:8098
+  plan-payment-service:
+    build: plan-payment-service/
+    container_name: plan-payment-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - mongo
+      - rabbitmq
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8096:8096
+  questionnaire-service:
+    build: questionnaire-service/
+    container_name: questionnaire-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - rabbitmq
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 9091:9091
+  wellness-mentor-service:
+    build: wellness-mentor-service/
+    container_name: wellness-mentor-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - mongo
+      - rabbitmq
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8085:8085
+  wellness-service:
+    build: wellness-service/
+    container_name: wellness-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - mongo
+      - rabbitmq
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8070:8070
+  wellness-tracker-service:
+    build: wellness-tracker-service/
+    container_name: wellness-tracker-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8083:8083
+  sentiment-service:
+    build: sentiment-service/
+    container_name: sentiment-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8090:8090
+  socket-notification-service:
+    build: socket-notification-service/
+    container_name: socket-notification-service
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - rabbitmq
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8092:8092

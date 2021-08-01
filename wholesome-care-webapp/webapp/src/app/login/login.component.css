@@ -1,0 +1,45 @@
+ /* .example-form {
+  min-width: 20px;
+  max-width: 20px;
+  width: 20%;
+} */
+ 
+ .example-full-width {
+  width: 100%;
+} 
+.container{
+  min-height: fit-content;
+}
+mat-form-field:first-child{
+  margin-top: 1rem ;
+}
+.card{
+
+  max-width: 400px !important;
+  margin: 3rem auto;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .7);
+  overflow: hidden;
+}
+.login-title{
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  color: #eee;
+  font-weight: 600;
+  font-size: 1.4rem;
+  
+
+}
+.formbox{
+  width: inherit;
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.social-login .btn-img {
+	width: 30px;
+	height: auto;
+	padding: 0.6rem 0;
+	margin-right: 15px;
+}

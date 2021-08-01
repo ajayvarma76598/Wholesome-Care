@@ -1,0 +1,305 @@
+<div class="homePage">
+  <div class="landingPage flex-center">
+    <div class="flex-center content">
+      <div class="qoute">
+        <h1>
+          "Your life only gets better when you do work on yourself and the rest will follow."
+        </h1>
+      </div>
+      <div class="card-space">
+        <div class="login-card card flex-center">
+          <h2>Get your Personalised Wellness Plan <span>Today</span></h2>
+          <button class="loginbtn btn" (click)="login()">Login Now</button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <button class="botbtn" mat-fab aria-label="button for chating with nutrition bot" (click)="botIsTalking()">
+      <mat-icon>question_answer</mat-icon>
+    </button>
+    <button class="sosbtn" mat-fab color="primary" aria-label="button for chating with nutrition bot">
+      <mat-icon>psychology</mat-icon>
+    </button>
+    <button class="sosbtn" mat-fab (click)="openDialog()"><mat-icon>psychology</mat-icon></button>
+  </div>
+  <div class="container bmicalculator">
+    <app-bmicalculator></app-bmicalculator>
+  </div>
+  <!-- this section is for services that our product offer-->
+  <div class="services container">
+    <h1 class="title">Here are some things you can do</h1>
+    <div class="works flex-center">
+      <div class="work-card card" data-aos="fade-right">
+        <h2>Diet & Workout Plan</h2>
+        <img src="../../assets/images/dietplan.jpg" alt="diet plan image">
+        <p>our diet and workout plan design by specialists to boost your overall wellness and improve your lifestyle.
+        </p>
+        <button class="btn work-btn">Know More</button>
+      </div>
+      <div class="work-card card" data-aos="fade-up">
+        <h2>Personal Wellness Mentor</h2>
+        <img src="../../assets/images/personalTrainer.jpg" alt="personal trainer image">
+        <p>Get personal connects with wellness specialists to boost your overall wellness and achieve daily goals.</p>
+        <button class="btn work-btn">Know More</button>
+      </div>
+      <div class="work-card card" data-aos="fade-left">
+        <h2>Calorie Management</h2>
+        <img src="../../assets/images/calorieCount.jpg" alt="calorie count image">
+        <p>Our plan counts your daily calorie consumptions and burnt to boost your health and fitness.</p>
+        <button class="btn work-btn">Know More</button>
+      </div>
+      <div class="work-card card" data-aos="fade-right">
+        <h2>Track Your Daily Activity</h2>
+        <img src="../../assets/images/path.jpg" alt="path image">
+        <p>We provide you a full support during your wellness journey. Provide the clear path to achieve good wellness.
+        </p>
+        <button class="btn work-btn">Know More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- this section is for achievements that our product achieve-->
+  <div class="achievement container">
+    <div class="info-card">
+      <div class="info-left">
+        <h2 class="info-heading">Our Achievements</h2>
+        <p class="info-discription">
+          We provide a comfortable environment to our coustomers to achieve their full potential through our experienced
+          mentors. It increase your health and wellbeing with beauty of motivations that push you to achieve your
+          wellness goals.
+        </p>
+        <a href="#" class="info-button">About Us</a>
+      </div>
+      <div class="info-right">
+        <div class="stat-group">
+          <h5 class="stat-number">124</h5>
+          <span class="stat-name">Corporate Client</span>
+        </div>
+        <div class="stat-group">
+          <h5 class="stat-number">200K</h5>
+          <span class="stat-name">Active Plans</span>
+        </div>
+        <div class="stat-group">
+          <h5 class="stat-number">500K</h5>
+          <span class="stat-name">Visited</span>
+        </div>
+        <div class="stat-group">
+          <h5 class="stat-number">10k</h5>
+          <span class="stat-name">Mentors</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- this section is for experts that our product have-->
+  </div>
+  <div class="expert container">
+    <h1 class="title"> Our Experts</h1>
+    <div class="expert-list">
+      <div class="expert-card">
+        <div class="front">
+          <div class="circleCut"><img src="../../assets/images/trainer1.jpg" alt="trainer "></div>
+          <mat-card-title>Trainer Sameul</mat-card-title>
+        </div>
+        <div class="back">
+          <p>He is one of the best Trainer in India. He serve more than 100K client in his carrer.</p>
+          <div class="social-menu">
+            <ul>
+              <li><a href="">
+                  <div class="icon-box"><img src="../../assets/icons/facebook.svg" alt=""></div>
+                </a></li>
+              <li><a href="">
+                  <div class="icon-box"><img src="../../assets/icons/twitter.svg" alt=""></div>
+                </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="expert-card">
+        <div class="front">
+          <div class="circleCut"><img src="../../assets/images/trainer2.jpg" alt="trainer "></div>
+          <mat-card-title>Trainer Mira</mat-card-title>
+        </div>
+        <div class="back">
+          <p>She is one of the best Trainer in South India. She serve more than 50K client in his carrer.</p>
+          <div class="social-menu">
+            <ul>
+              <li><a href="">
+                  <div class="icon-box"><img src="../../assets/icons/facebook.svg" alt=""></div>
+                </a></li>
+              <li><a href="">
+                  <div class="icon-box"><img src="../../assets/icons/twitter.svg" alt=""></div>
+                </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="expert-card">
+        <div class="front">
+          <div class="circleCut"><img src="../../assets/images/doctor1.jpg" alt="doctor"></div>
+          <mat-card-title>Dr. Richard Clark</mat-card-title>
+        </div>
+        <div class="back">
+          <p>Dr. Richard Clark is qualified Dietician and Nutritionist served many satisfied clients .</p>
+          <div class="social-menu">
+            <ul>
+              <li><a href="">
+                  <div class="icon-box"><img src="../../assets/icons/facebook.svg" alt=""></div>
+                </a></li>
+              <li><a href="">
+                  <div class="icon-box"><img src="../../assets/icons/twitter.svg" alt=""></div>
+                </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="expert-card">
+        <div class="front">
+          <div class="circleCut"><img src="../../assets/images/doctor2.jpg" alt="doctor"></div>
+          <mat-card-title>Dietician Kiara</mat-card-title>
+        </div>
+        <div class="back">
+          <p>Dietician Kiara is one of the best Dietician in Delhi. She serve many renowned name celebreties.</p>
+          <div class="social-menu">
+            <ul>
+              <li><a href="">
+                  <div class="icon-box"><img src="../../assets/icons/facebook.svg" alt=""></div>
+                </a></li>
+              <li><a href="">
+                  <div class="icon-box"><img src="../../assets/icons/twitter.svg" alt=""></div>
+                </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- this section is for testimonals that our product get from customers-->
+  <div class="testimonals container">
+    <h1 class="title">Our Success Stories</h1>
+    <div class="box-container flex-center">
+      <swiper [effect]="'coverflow'" [grabCursor]="true" [centeredSlides]="true" [slidesPerView]="'auto'"
+        [spaceBetween]="30" [centeredSlides]="true" [autoplay]="{
+      delay: 100,
+      disableOnInteraction: false
+    }" [coverflowEffect]="{
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true
+    }" [loop]="true" class="mySwiper">
+        <ng-template swiperSlide>
+          <div class="testimonalCard">
+            <mat-icon class="formatQuote">format_quote</mat-icon>
+            <div class="testimonalContent">
+              <p>Wholesome-care has helped me in my diet plan and also in my transformation. I have found the resources useful and affective</p>
+              <div class="customerDetails">
+                <div class="imgBox">
+                  <img src="../../assets/images/profile4.jpeg" alt="">
+
+                </div>
+                <h3>Mrs. Lucy Litt <br><span>Student</span></h3>
+              </div>
+              <div class="rating">
+                <mat-icon>star star star star star_outline</mat-icon>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="testimonalCard">
+            <mat-icon class="formatQuote">format_quote</mat-icon>
+            <div class="testimonalContent">
+              <p>Wholesome-care helped me in my transformation that i have wanted</p>
+              <div class="customerDetails">
+                <div class="imgBox">
+                  <img src="../../assets/images/profile2.jpeg" alt="">
+
+                </div>
+                <h3>Mr.Prajval<br><span>Programmer</span></h3>
+              </div>
+              <div class="rating">
+                <mat-icon>star star star star star_outline</mat-icon>
+              </div>
+            </div>
+
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="testimonalCard">
+            <mat-icon class="formatQuote">format_quote</mat-icon>
+            <div class="testimonalContent">
+              <p>I would like to thank Wholesome-care which has paved a way for my recovery through nutrition</p>
+              <div class="customerDetails">
+                <div class="imgBox">
+                  <img src="../../assets/images/profile3.jpeg" alt="">
+
+                </div>
+                <h3>Mrs. Lisa Ray<br><span>creative writer</span></h3>
+              </div>
+              <div class="rating">
+                <mat-icon>star star star star star_outline</mat-icon>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="testimonalCard">
+            <mat-icon class="formatQuote">format_quote</mat-icon>
+            <div class="testimonalContent">
+              <p>Wholesome-care has helped me in my diet plan and also in my transformation. I have found the resources useful and affective</p>
+              <div class="customerDetails">
+                <div class="imgBox">
+                  <img src="../../assets/images/profile4.jpeg" alt="">
+
+                </div>
+                <h3>Mr. Paul Jay<br><span>Fashion Designer</span></h3>
+              </div>
+              <div class="rating">
+                <mat-icon>star star star star star_outline</mat-icon>
+              </div>
+            </div>
+
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="testimonalCard">
+            <mat-icon class="formatQuote">format_quote</mat-icon>
+            <div class="testimonalContent">
+              <p>Wholesome-care has help me to stay strong mentally and physically.Which i feel is the most important part of a traveller lifestyle</p>
+              <div class="customerDetails">
+                <div class="imgBox">
+                  <img src="../../assets/images/profile5.jpeg" alt="">
+
+                </div>
+                <h3>Mr. Simu Liu <br><span>Traveller</span></h3>
+              </div>
+              <div class="rating">
+                <mat-icon>star star star star star_outline</mat-icon>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+
+    </div>
+  </div>
+  <div class=" resources container">
+    <div fxLayout="row" fxLayoutAlign="center center">
+            <div class="img-box" fxFlex="35%">
+                <img src="../../assets/images/home.png" alt="">
+            </div>
+            <div class="end">
+              <p>Wellness consists of many aspects of this we at 'Wholesome-Care' concentrate on Physical and Mental aspects of Wellness.</p>
+            </div>
+  </div>
+<app-footer></app-footer>
+
+</div>

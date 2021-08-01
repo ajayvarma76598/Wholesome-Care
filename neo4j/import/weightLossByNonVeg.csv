@@ -1,0 +1,4 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+36,Fish and shellfish,6,child,part of,This restriction does not apply to pescetarians,,,,,,
+37,Meat-based ingredients,6,child,part of,"Gelatin, lard, carmine, isinglass, oleic acid and suet",,,,,,
+40,Other animal products,6,child,part of,"Vegans may choose to avoid honey, beeswax and pollen",,,,,,

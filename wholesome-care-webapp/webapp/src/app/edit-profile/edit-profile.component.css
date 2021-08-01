@@ -1,0 +1,26 @@
+textarea{
+    resize: none;
+}
+mat-form-field{
+    width: 100%;
+}
+.mat-dialog-container, .cdk-overlay-pane {
+    margin-top: 5rem;
+}
+.buttons{
+  width: 100%;
+
+}
+.editProfileButton{
+  box-shadow: none;
+  padding: .5em 1.5em;
+  width: 100px;
+  background-color: var(--primary-color);
+  color: #ededed;
+  border-radius: 10px;
+  font-family: var(--body-font-family);
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+
+}

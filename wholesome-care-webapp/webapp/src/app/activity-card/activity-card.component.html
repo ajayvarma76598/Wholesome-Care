@@ -1,0 +1,14 @@
+<mat-card class="example-card" fxLayout="column" fxLayoutAlign="center center">
+  <div class="activity-data" fxLayout="row" fxLayoutAlign="space-evenly center">
+    <div class="imageFitness">
+      <img mat-card-image [src]='imageUrlActivity' alt="Activity Image">
+    </div>
+    <mat-card-header class="details" fxLayout="column">
+      <mat-card-title>{{activity.name}}</mat-card-title>
+      <mat-card-subtitle>{{activity.activityType}}</mat-card-subtitle>
+      <mat-card-subtitle>{{activity.calorieBurnt}} Cal Burn | {{activity.duration_min}} min</mat-card-subtitle>
+    </mat-card-header>
+  </div>
+  <button class="button" mat-raised-button color="primary" (click)="startActivity(activity)">Start</button>
+</mat-card>
+

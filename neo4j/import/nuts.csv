@@ -1,0 +1,5 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+116,Almonds,30,child,part of,"Almonds, walnuts, cashews, chestnuts",,,,,,
+117,walnuts,30,child,part of,"Almonds, walnuts, cashews, chestnuts",,,,,,
+118,cashews,30,child,part of,"Almonds, walnuts, cashews, chestnuts",,,,,,
+119,chestnuts,30,child,part of,"Almonds, walnuts, cashews, chestnuts",,,,,,

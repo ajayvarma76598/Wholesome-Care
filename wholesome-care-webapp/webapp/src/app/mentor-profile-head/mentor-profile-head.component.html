@@ -1,0 +1,12 @@
+<div class="profile" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
+    <div class="imgBox">
+        <img src="{{mentor.imagePath}}" alt="">
+    </div>
+    <div class="detail">
+        <h2 class="name">{{mentor.name}}</h2>
+        <h3 class="expertize">{{mentor.expertize}}</h3>
+        <span class="rating" *ngFor="let ratingId of ratingArr;index as i">
+            <mat-icon>{{showIcon(i)}}</mat-icon>
+        </span>
+    </div>
+</div>

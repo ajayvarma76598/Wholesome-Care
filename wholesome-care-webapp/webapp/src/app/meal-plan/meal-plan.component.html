@@ -1,0 +1,50 @@
+<div class="head">
+    <h1>Meal Plan</h1>
+    <div class="topr">
+        <div>
+            <mat-card>
+                <section class="controls">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <h5>Enter Number of calories Required</h5>
+                            <input matInput placeholder="Enter calories(e.g. 2000)" #box>
+                        </mat-form-field>
+                        <!-- <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="calories(e.g. 2000)" aria-label="Username" aria-describedby="basic-addon1" #input>
+    </div> -->
+                    </form>
+                </section>
+                <div class="hema">
+                    <button (click)="getMealData(box.value)">Get Meal Plan</button>
+                </div>
+            </mat-card>
+        </div>
+        <main *ngIf="isNutritionChatBott==true">
+            <section class="nutrients">
+                <h2>{{title}}</h2>
+                <ul>
+                    <li>Calories : {{this.details.nutrients.calories}}</li>
+                    <li>Carbohydrates : {{this.details.nutrients.carbohydrates}}</li>
+                    <li>Fats : {{this.details.nutrients.fat}}</li>
+                    <li>Proteins : {{this.details.nutrients.protein}}</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+</div>
+<div class="meals">
+    <article *ngFor="let meal of this.details.meals">
+        <div class="height">
+            <h3>{{meal.title}}</h3>
+        </div>
+        <img src="https://spoonacular.com/recipeImages/{{meal.id}}-312x231.{{meal.imageType}}" alt="recipe">
+        <ul class="instructions">
+            <li>Preperation time: {{meal.readyInMinutes}}</li>
+            <!-- <li>Number of servings: {{meal.servings}}</li> -->
+        </ul>
+        <div class="hema">
+            <a (click)="goToUrl(meal.sourceUrl)">Go To Recipe</a>
+        </div>
+    </article>
+</div>

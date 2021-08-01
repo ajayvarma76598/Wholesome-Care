@@ -1,0 +1,4 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+126,Beef,34,child,part of,"Beef, veal and pork",,,,,,
+127,veal,34,child,part of,"Beef, veal and pork",,,,,,
+128,pork,34,child,part of,"Beef, veal and pork",,,,,,

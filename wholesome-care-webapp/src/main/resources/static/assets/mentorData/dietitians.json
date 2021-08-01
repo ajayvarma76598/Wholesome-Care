@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "name":"Lavleen Kaur",
+        "discription":"Accredited with the title of ‘most trusted dietitian in North India’, Lavleen Kaur is a clinical nutritionist and lifestyle coach from Chandigarh.Also known as the people’s dietitian, Lavleen holds multiple master’s specialising in Foods, Nutrition, Education, Public Health and Family Welfare. Name",
+        "image":"../../assets/mentorData/mentorimage/dietitian/Lavleen-Kaur.jpg"
+
+    },
+    {
+        "id":2,
+        "name":"Ryan Fernando",
+        "discription":"As an award-winning celebrity Sports Nutritionist, Ryan Fernando has an unfathomable list of accolades attributed to himself and an endless list of star athletes and celebrities who are associated with him.",
+        "image":"../../assets/mentorData/mentorimage/dietitian/Ryan-Fernando.jpg"
+    },
+    {
+        "id":3,
+        "name":"Dr-Shika sharma",
+        "discription":"Dr Shikha pioneered the concept of Nutrigenetics, which combines modern medicine techniques and the principles of Ayurveda. With the proven concept of Nutrigenetics, she decided to help the masses and shifted her focus from working alone to having a group of intellectuals.",
+        "image":"../../assets/mentorData/mentorimage/dietitian/Dr-Shikha-Sharma.jpg"
+    },
+    {
+        "id":4,
+        "name":"Pooja Makhija",
+        "discription":"Pooja Makhija holds an MSc in Food Science and Nutrition. She has catered to over 10,000 clients across a wide spectrum of people from varied backgrounds—entrepreneurs, housewives, working professionals, and even several members of the film fraternity.",
+        "image":"../../assets/mentorData/mentorimage/dietitian/Pooja-Makhija.jpg"
+    },
+    {
+        "id":5,
+        "name":"Ishi Khosla",
+        "discription":"A practicing clinical nutritionist, columnist, author, entrepreneur, researcher, and welfare worker, Ishi Khosla is a Delhi-based nutritionist with a Master’s in Food and Nutrition. Ishi’s love for weight loss began at a young age when she devised weight loss methods for herself to slim down, having suffered from obesity.",
+        "image":"../../assets/mentorData/mentorimage/dietitian/Ishi-Khosla.jpg"
+    }
+]

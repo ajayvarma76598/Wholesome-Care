@@ -1,0 +1,16 @@
+<div class="confirmBox" fxLayout="column" fxLayoutAlign="start center">
+  <div class="title">
+    <h2>
+      {{title}}
+    </h2>
+  </div>
+
+  <div class="content" mat-dialog-content>
+    <p>{{message}}</p>
+  </div>
+
+  <div class="buttonss" fxLayout="row" fxLayoutAlign="space-between center">
+    <button class="buttonsAction"  (click)="onDismiss()">No</button>
+    <button class="buttonsAction" (click)="onConfirm()">Yes</button>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+54,Elliptical training,20,child,part of,Run for 6 KM,,,,,1,
+23,jumping,20,child,part of,jumping to be done 1set of 15times each,,,,,3,
+24,skipping,20,child,part of,skipping to be done 1set of 15times each,,,,,3,
+9,Cardio,20,child,part of,plank/strech,,,,,3,
+55,Walking,20,child,part of,Run for 6 KM,,,,,1,
+56,Treadmill training,20,child,part of,Run for 6 KM,,,,,1,
+57,Swimming,20,child,part of,Run for 6 KM,,,,,1,
+58,Cycling,20,child,part of,Run for 6 KM,,,,,1,
+53,jogging,20,child,part of,Run for 6 KM,,,,,1,

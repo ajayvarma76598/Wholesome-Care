@@ -1,0 +1,226 @@
+<div class="xcv">
+    <div>
+        <!-- <button (click)="nutritionChatBot()" mat-raised-button>Nutrition CHat Bot</button>
+        <button (click)="calorieCounterChatBot()" mat-raised-button>Calorie Count Chat Bot</button> -->
+        <p class="headingN">Select an option you want to choose :</p>
+        <!-- <mat-radio-group aria-label="Select an option"> -->
+        <div class="buttp">
+            <!-- <p class="cio"><button value="1" (click)="nutritionChatBot()">Nutrition Bot</button></p>
+            <p class="cio"><button value="2" (click)="calorieCounterChatBot()">Activities Bot</button></p> -->
+            <p class="cio" (click)="nutritionChatBot()">Nutrition Bot</p>
+            <p class="cio" (click)="calorieCounterChatBot()">Activities Bot</p>
+        </div>
+        <!-- </mat-radio-group> -->
+    </div>
+
+    <div class="container" fxLayout="row" fxLayoutAlign="space-around start">
+
+        <div class="chatBot" *ngIf="isNutritionChatBot==true && isCalorieCountChatBot==false">
+            <div class="neu">
+
+                <!-- <p>
+                <mat-toolbar>
+                    <span>Nutrition Chat Bot</span>
+                    <div id='bodybox'>
+                    <div id='chatborder'>
+                        <p id="chatlog7" class="chatlog">&nbsp;</p>
+                        <p id="chatlog6" class="chatlog">&nbsp;</p>
+                        <p id="chatlog5" class="chatlog">&nbsp;</p>
+                        <p id="chatlog4" class="chatlog">&nbsp;</p>
+                        <p id="chatlog3" class="chatlog">&nbsp;</p>
+                        <p id="chatlog2" class="chatlog">&nbsp;</p>
+                        <p id="chatlog1" class="chatlog">&nbsp;</p>
+                    </div>
+                </div>
+                </mat-toolbar>
+            </p> -->
+                <p class="headingN">Nutrition Chat Bot</p>
+                <p class="bods">Hi, Please type your food intake to see your Nutrition Chat</p>
+                <p class="bodi">For Example: ( I ate 1 bowl of Rice with 1 bowl of daal and drunk 1 class of juice and ate 1 bowl chicken )</p>
+                <div class="ibox">
+                    <form class="formc" [formGroup]="foodInputForm" (ngSubmit)="foodConsumedTake()">
+                        <mat-form-field class="pou" appearance="fill">
+                            <mat-label>Food intake Information</mat-label>
+                            <!-- <input matInput #foodConsumedInput (keyup.enter)="foodConsumedTake(foodConsumedInput.value)" placeholder="Type here"> -->
+                            <div class="inr">
+                                <textarea class="inputr" matInput formControlName="foodConsumedInput" placeholder="Type in here"></textarea>
+                                <button mat-button class="icon"><mat-icon matPrefix [disabled]="!foodInputForm.valid" mat-raised-button type="submit">send</mat-icon></button>
+                            </div>
+                        </mat-form-field>
+
+
+                        <!-- <button [disabled]="!foodInputForm.valid" mat-raised-button type="submit">Send</button> -->
+                    </form>
+                </div>
+            </div>
+            <!-- <mat-form-field *ngIf="inputSentFood">
+                <input matInput #input [value]="inputSentFood">
+                <input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
+            </mat-form-field> -->
+            <div>
+                <mat-toolbar *ngIf="foodNutrientDetails">
+                    <span>Details of your Food Consumed Nutrient</span>
+                </mat-toolbar>
+                <!-- <h2 *ngIf="errormessage">{{errormessage}}</h2> -->
+                <table *ngIf="foodNutrientDetails" mat-table [dataSource]="foodNutrientDetails" class="mat-elevation-z8">
+                    <ng-container matColumnDef="Food Name">
+                        <th mat-header-cell *matHeaderCellDef>Food</th>
+                        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        <td mat-footer-cell *matFooterCellDef> Total </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Amount">
+                        <th mat-header-cell *matHeaderCellDef>Amount</th>
+                        <td mat-cell *matCellDef="let element"> {{element.serving_size_g | number : '1.2-2'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalAmountFoodIntake() | number : '1.2-2'}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Sugar">
+                        <th mat-header-cell *matHeaderCellDef> Sugar </th>
+                        <td mat-cell *matCellDef="let element"> {{element.sugar_g | number : '1.2-2'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalSugar() | number : '1.2-2'}} </td>
+                    </ng-container>
+
+                    <!-- <ng-container matColumnDef="Fiber">
+                    <th mat-header-cell *matHeaderCellDef> Fiber </th>
+                    <td mat-cell *matCellDef="let element"> {{element.fiber_g | number : '1.2-2'}} </td>
+                    <td mat-footer-cell *matFooterCellDef> {{getTotalFiber() | number : '1.2-2'}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Sodium">
+                    <th mat-header-cell *matHeaderCellDef> Sodium </th>
+                    <td mat-cell *matCellDef="let element"> {{element.sodium_mg | number : '1.2-2'}} </td>
+                    <td mat-footer-cell *matFooterCellDef> {{getTotalSodium() | number : '1.2-2'}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Potessium">
+                    <th mat-header-cell *matHeaderCellDef> Potessium </th>
+                    <td mat-cell *matCellDef="let element"> {{element.potassium_mg | number : '1.2-2'}} </td>
+                    <td mat-footer-cell *matFooterCellDef> {{getTotalPotessium() | number : '1.2-2'}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Saturated Fat">
+                    <th mat-header-cell *matHeaderCellDef> Saturated Fat </th>
+                    <td mat-cell *matCellDef="let element"> {{element.fat_saturated_g | number : '1.2-2'}} </td>
+                    <td mat-footer-cell *matFooterCellDef> {{getTotalSaturatedFat() | number : '1.2-2'}} </td>
+                </ng-container> -->
+
+                    <ng-container matColumnDef="Total Fat">
+                        <th mat-header-cell *matHeaderCellDef>Fat</th>
+                        <td mat-cell *matCellDef="let element"> {{element.fat_total_g | number : '1.2-2'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalFat() | number : '1.2-2'}} </td>
+                    </ng-container>
+
+                    <!-- <ng-container matColumnDef="Cholesterol">
+                        <th mat-header-cell *matHeaderCellDef> Cholesterol </th>
+                        <td mat-cell *matCellDef="let element"> {{element.cholesterol_mg | number : '1.2-2'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalCholesterol() | number : '1.2-2'}} </td>
+                    </ng-container> -->
+
+                    <ng-container matColumnDef="Protein">
+                        <th mat-header-cell *matHeaderCellDef>Protein</th>
+                        <td mat-cell *matCellDef="let element"> {{element.protein_g | number : '1.2-2'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalProtein() | number : '1.2-2'}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Carbohydrates">
+                        <th mat-header-cell *matHeaderCellDef>Carbs</th>
+                        <td mat-cell *matCellDef="let element"> {{element.carbohydrates_total_g | number : '1.2-2'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalCarbohydrates() | number : '1.2-2'}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Calorie">
+                        <th mat-header-cell *matHeaderCellDef>Calorie</th>
+                        <td mat-cell *matCellDef="let element"> {{element.calories | number : '1.2-2'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalCalorie() | number : '1.2-2'}} </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+                    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+                </table>
+            </div>
+        </div>
+
+
+
+        <div class="chatBot" *ngIf="isNutritionChatBot==false && isCalorieCountChatBot==true">
+            <div class="neu">
+                <p class="headingN">Activities Bot</p>
+                <p class="bods">Hi, Please type your daily exercise to check your daily calories burnt</p>
+                <p class="bodi">For Example: ( 30 min yoga and 1 hour running )</p>
+                <!-- <mat-form-field appearance="fill">
+  <mat-label>Input</mat-label>
+  <input matInput #activityDetailInput (keyup.enter)="calorieBurntFromActivities(activityDetailInput.value)" placeholder="Type here">
+</mat-form-field> -->
+                <!-- <mat-form-field *ngIf="inputSentActivity">
+                <input matInput #input [value]="inputSentActivity">
+            </mat-form-field> -->
+                <div class="ibox">
+                    <!-- <form [formGroup]="foodInputForm" (ngSubmit)="calorieBurntFromActivities()">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Exercises Information</mat-label>
+                        <input matInput #foodConsumedInput (keyup.enter)="foodConsumedTake(foodConsumedInput.value)" placeholder="Type here">
+                        <textarea matInput formControlName="foodConsumedInput" placeholder="Type here"></textarea>
+                    </mat-form-field>
+                    <button [disabled]="!foodInputForm.valid" mat-raised-button type="submit">Send</button>
+                </form> -->
+                    <form class="formc" [formGroup]="activityFormInput" (ngSubmit)="calorieBurntFromActivities()">
+                        <mat-form-field class="pou" appearance="fill">
+                            <mat-label>Exercises Information</mat-label>
+                            <!-- <input matInput #foodConsumedInput (keyup.enter)="foodConsumedTake(foodConsumedInput.value)" placeholder="Type here"> -->
+                            <div class="inr">
+                                <textarea class="inputr" matInput formControlName="activitydetailsInput" placeholder="Type in here"></textarea>
+                                <button mat-button class="icon"><mat-icon matPrefix [disabled]="!activityFormInput.valid" mat-raised-button type="submit">send</mat-icon></button>
+                            </div>
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <mat-toolbar *ngIf="calorieBurntFromActivitiesDetails">
+                    <span>Details of your Calorie Burnt</span>
+                </mat-toolbar>
+                <table *ngIf="calorieBurntFromActivitiesDetails" mat-table [dataSource]="calorieBurntFromActivitiesDetails" class="mat-elevation-z8">
+                    <ng-container matColumnDef="Activity Name">
+                        <th mat-header-cell *matHeaderCellDef> Activity</th>
+                        <td mat-cell *matCellDef="let element"> {{element.activity}} </td>
+                        <td mat-footer-cell *matFooterCellDef> Total </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Time Duration">
+                        <th mat-header-cell *matHeaderCellDef>Duration</th>
+                        <td mat-cell *matCellDef="let element"> {{element.duration | number : '1.2-2'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> Total </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Time Unit">
+                        <th mat-header-cell *matHeaderCellDef>Unit</th>
+                        <td mat-cell *matCellDef="let element"> {{element.timeDuration}} </td>
+                        <td mat-footer-cell *matFooterCellDef> Total </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Calorie Burnt">
+                        <th mat-header-cell *matHeaderCellDef>Calorie Burnt</th>
+                        <td mat-cell *matCellDef="let element"> {{element.calorieBurnt | number : '1.2-2'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalCalorieBurtByActivities() | number : '1.2-2'}} </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+                    <tr mat-footer-row *matFooterRowDef="displayedColumns1"></tr>
+                </table>
+                <h2 *ngIf="errormessage">{{errormessage}}</h2>
+                <!-- <form [formGroup]="activityFormInput" (ngSubmit)="calorieBurntFromActivities()">
+            <mat-form-field appearance="fill">
+                <mat-label>Input</mat-label>
+                <input matInput #foodConsumedInput (keyup.enter)="foodConsumedTake(foodConsumedInput.value)" placeholder="Type here">
+                <input matInput formControlName="activitydetailsInput" placeholder="Type here">
+            </mat-form-field>
+            <button [disabled]="!activityFormInput.valid" mat-raised-button type="submit">Send</button>
+        </form> -->
+            </div>
+        </div>
+    </div>
+</div>

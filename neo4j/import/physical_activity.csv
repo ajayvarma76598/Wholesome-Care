@@ -1,0 +1,11 @@
+Id,name,parentId,Type,ParentRelation,description
+158,squat,144,child,child,ok
+159,streching,144,child,child,ok
+160,Rope-jumping,144,child,child,ok
+161,sun-salutation,144,child,child,ok
+162,Mountain Climbers,144,child,child,ok
+163,pilates,144,child,child,ok
+164,High-knees,144,child,child,ok
+165,Butt-kickers,144,child,child,ok
+166,brisk-walking,144,child,child,ok
+167,jogging,144,child,child,ok

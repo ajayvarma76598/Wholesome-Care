@@ -1,0 +1,414 @@
+.page{
+  width: 100%;
+  padding-top: -5rem;
+  height: fit-content;
+  background-color: #ededed;
+}
+h1{
+  font-family: var(--heading-font-family);
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: center;
+}
+.dashboard{
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 11vh;
+  /* margin-top: 20vh; */
+}
+.date{
+  font-family: var(--heading-font-family);
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: 600;
+
+}
+.wellcome{
+  font-family: var(--heading-font-family);
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* water tracking system section styling */
+.waterTracking{
+  width: 300px;
+  border-radius: 10px;
+  margin: 3rem 3rem;
+  padding: 1em ;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  margin-left: 2em;
+}
+.progressGlassIntake{
+  text-align: center;
+}
+.progressGlassIntake h1{
+  font-weight: 700;
+  font-size: 2em;
+}
+.progressGlassIntake span{
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-top: 1rem;
+}
+.water-icon{
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  font-size: 3em;
+  color: var(--primary-color);
+}
+::ng-deep  .front-spinner.mat-progress-spinner circle,.mat-spinner circle {
+  stroke: var(--primary-color);
+  stroke-linecap: round;
+  opacity: .8;
+}
+::ng-deep .back-spinner.mat-progress-spinner circle,.mat-spinner circle {
+  stroke: var(--primary-color);
+  opacity: .2;
+}
+.progressGlassIntake h1, span{
+  font-family: var(--heading-font-family);
+  color: var(--primary-color);
+  opacity: .8;
+
+}
+.spinTracker{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  box-shadow: none;
+}
+.front-spinner,.back-spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.back-spinner{
+  z-index: 0;
+}
+.front-spinner{
+  z-index: 100;
+}
+.buttons{
+  width: 100px;
+}
+.mat-fab:not([class*=mat-elevation-z]), .mat-mini-fab:not([class*=mat-elevation-z]){
+  box-shadow: none;
+  background-color: var(--primary-color);
+  transform: scale(.5);
+}
+/* style section for user profile data */
+.userProfiledata{
+  position: relative;
+  margin: 3rem 3rem 3rem 3rem;
+  padding: 2em 0;
+  width: 90%;
+  max-width: 1000px;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+mat-card.introCard{
+  width: 90%;
+  height: 100%;
+  max-width: 400px;
+  box-shadow: none;
+}
+.introCard h1, h3{
+  font-family: var(--heading-font-family);
+  text-transform: capitalize;
+}
+
+.introCard h1{
+  font-weight: 600;
+}
+.introCard a{
+  color:var(--primary-color);
+  cursor: pointer;
+}
+.introCard{
+  margin-top: 3em;
+}
+.noday{
+  font-size: 1.5em;
+  opacity: .6;
+  color: var(--primary-color);
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+
+.noday .noOfDays{
+  font-size: 3rem;
+  position: relative;
+}
+.noday h3{
+  font-family: 600;
+
+}
+.tileFirst{
+  background: #ededed;
+}
+.mat-list-level{
+  width: 100%;
+  padding: 0 1em;
+}
+.belts{
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.level{
+  position: absolute;
+  top:53%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  color: var(--primary-color);
+}
+.level .score{
+
+  font-weight: bold;
+  font-family: var(--heading-font-family);
+}
+
+.levelMatched{
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 8);
+}
+.levels{
+  width: 90%;
+  max-width: 600px;
+  padding: 1em;
+  box-shadow: none;
+  text-align: center;
+}
+.mat-list-level span{
+  font-family: var(--heading-font-family);
+  font-size: 1.3em;
+  font-weight: 600;
+  opacity: .8;
+  margin-top: 1.2em ;
+  margin-bottom: .3em;
+}
+.score{
+  z-index: 100;
+  position: absolute;
+  top:45%;
+  left: 50%;
+  color: #000;
+}
+
+
+/* userDietPlan Section styling */
+.userDietPlan{
+  margin-bottom: 3rem;
+  width: 90vw;
+  max-width: 1200px;
+
+}
+
+/* style suggestions */
+.suggestion{
+  text-align: center;
+  background: var(--primary-color);
+  width: 100%;
+  height: fit-content;
+  padding: 2rem 0;
+  /* margin-left: 20px; */
+}
+.suggestion h1{
+  color: #ededed;
+}
+.suggestion-list{
+  width: 90%;
+  max-width: 1000px;
+  overflow: auto;
+  height: fit-content;
+  margin: 2rem;
+}
+.user-card {
+  margin: 0 2em;
+}
+.suggestion-button .button{
+  color: var(--primary-color);
+  background-color: #fdfdfd;
+  margin: 0 4rem;
+}
+.suggestion-button .button:disabled{
+  opacity: .5;
+}
+
+
+
+
+.day{
+  margin-left: 2vw;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: bold;
+  height: 2vh;
+  text-align: center;
+}
+.profilePlanButton{
+  /* width: 20%; */
+  margin-right: 40px;
+}
+.profilePlanButton button{
+  padding: 0 7px;
+  font-family: var(--heading-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ededed;
+  box-shadow: none;
+  border: none;
+  background-color: var(--primary-color);
+  margin-right: 5px;
+  cursor: pointer;
+}
+.profilePlanButton i{
+  color: rgb(255,255,255,.7);
+  font-size: 25px;
+}
+.dashboard img{
+  width: 100px;
+  height: 60px;
+}
+
+@media screen and (min-width: 930px){
+  .dashboard img {
+
+    margin-left: 3rem;
+  }
+}
+
+/* styling the todolist section */
+.todoSection{
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: fit-content;
+  margin-bottom:5rem ;
+  overflow-x: auto;
+}
+
+.todoSection h1{
+  width: 100%;
+  color: #ededed;
+  margin: 2rem 0;
+}
+.taskDone{
+  width: 100%;
+}
+
+.todo-box,.done-task-box {
+  width: 450px;
+ height: fit-content;
+  margin:3rem;
+  padding: 2rem 1em;
+  background-color: #ededed;
+  position: relative;
+  vertical-align: top;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.addIcon{
+  cursor: pointer;
+  position: absolute;
+  left: 90%;
+  z-index: 500;
+  /* padding: 5vh; */
+}
+.todo-box h2,.done-task-box h2{
+  font-family: var(--heading-font-family);
+  font-size: 2em;
+  font-family: 600;
+  text-align: center;
+}
+
+.activities-items {
+  height: 400px;
+  min-height: 60px;
+  overflow-y: auto;
+  display: block;
+}
+
+.activity-box {
+  padding: 10px 10px 0 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 0 rgba(9, 30, 66, .25);
+  width: 400px;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 1em;
+}
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.activity-box:last-child {
+  border: none;
+}
+.activities-items.cdk-drop-list-dragging .activity-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.example-card {
+  max-width: 400px;
+}
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.doneTaskSuggestion{
+  height: auto;
+}
+
+::ng-deep .blue-snackbar{
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--primary-color);
+  height: 60px;
+  opacity: 0.8;
+  font-family: var(--body-font-family);
+  font-size: 3em;
+  font-weight: 600;
+}
+.bell-icon{
+  cursor: pointer;
+}
+::ng-deep .dialogBoxNotification .mat-dialog-container{
+  background: var(--primary-color);
+  padding: 9px;
+}
+::ng-deep .dialogBoxPlan .mat-dialog-container{
+  background: url(../../assets/questionnaire/backgroundBefore.jpeg);
+  padding: 1em;
+  overflow: auto;
+}

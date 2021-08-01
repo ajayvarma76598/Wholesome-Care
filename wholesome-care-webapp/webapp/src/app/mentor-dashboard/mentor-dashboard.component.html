@@ -1,0 +1,40 @@
+<div class="profile" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
+    <div class="imgBox">
+        <img src="{{mentor.imagePath}}" alt="">
+    </div>
+    <div class="detail">
+        <h2 class="name">{{mentor.name}}</h2>
+        <h3 class="expertize">{{mentor.expertize}}</h3>
+        <span class="rating" *ngFor="let ratingId of ratingArr;index as i">
+            <mat-icon>{{showIcon(i)}}</mat-icon>
+        </span>
+        <button class="btn" (click)="toProfile()">Profile</button>
+    </div>
+  </div>
+  <div class="appointmentSlots databox">
+      <div class="head" fxLayout="row " fxLayout.xs="column" fxLayoutAlign="space-between center">
+          <h3>Appointment Slots:</h3>
+          <button mat-fab *ngIf="appointmentSlots.length < 3" (click)="addSlot()"><mat-icon>add</mat-icon></button>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start center">
+          <button class="button" (click)="changeSlotTiming(slot)" *ngFor="let slot of appointmentSlots">{{slot}}</button>
+      </div>
+  </div>
+  <div class="bookedAppointmnets databox" fxLayout="column" fxLayoutAlign="center start">
+      <h3>Today's Appointment:</h3>
+  
+      <button class="button" (click)="appointmentDetails(appointment)" *ngFor="let appointment of bookedAppointments" fxLayout="row" fxLayoutAlign="start center">
+          <div class="dateBox">
+              <h3 class="date">{{date | date:'dd'}}</h3>
+              <h4>{{date | date:'EEE'|uppercase}}</h4>
+          </div>
+          <div class="appointmentTime">
+              <h3>{{appointment.appointmentSlot.openingTime}}</h3>
+          </div>
+          <div class="customerName">
+              <h3>{{appointment.customerName}}</h3>
+          </div>
+  
+      </button>
+  </div>
+  

@@ -1,0 +1,5 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+97,Milk,39,child,part of,"This restriction on milk, yogurt and cheese applies to vegans and ovo-vegetarians",,,,,,
+98,yogurt,39,child,part of,"This restriction on milk, yogurt and cheese applies to vegans and ovo-vegetarians",,,,,,
+99,cheese,39,child,part of,"This restriction on milk, yogurt and cheese applies to vegans and ovo-vegetarians",,,,,,
+100,butter,39,child,part of,"This restriction on milk, yogurt and cheese applies to vegans and ovo-vegetarians",,,,,,

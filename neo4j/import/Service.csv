@@ -1,0 +1,3 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,effectOnWeight,benefit
+1,Diet,7,child,branch of,DietPlan,,,,,,,
+2,activities,7,child,branch of,Task,,,,,,,

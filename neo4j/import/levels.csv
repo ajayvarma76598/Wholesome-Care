@@ -1,0 +1,4 @@
+Id,name,parentId,Type,ParentRelation,description
+1001,Red,41,parent,parent,Serious issues detected treatment to be started immediatly
+1002,Amber,41,parent,parent,no serious issues but need to give a good treatment
+1003,Green,41,parent,parent,perfectly alright but should be provoded with booster plan

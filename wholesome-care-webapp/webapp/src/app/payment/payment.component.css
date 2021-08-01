@@ -1,0 +1,103 @@
+form{
+  display: flex;
+  flex-direction: column;
+}
+.note{
+font-family: var(--body-font-family);
+font-size: 1.3em;
+width: 250px;
+font-weight: 600;
+line-height: 1.2em;
+padding: 1em;
+margin-bottom: 3rem;
+margin-left: 1.5em;
+border-radius: 10px;
+background-color: #eee;
+box-shadow: 0 10px 30px rgba(0, 0, 0, .7);
+
+}
+.page{
+width: 100%;
+height: 100vh;
+background-image: url(../../assets/questionnaire/whiteWoodenBackground.jpg);
+}
+mat-progress-spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+.card{
+
+  width: 90%;
+  height: fit-content;
+  max-width: 400px;
+  min-width: 260px;
+  margin-bottom:  3rem ;
+  padding: 0;
+padding-bottom: 1em;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .7);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.login-title{
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  color: #eee;
+  font-weight: 600;
+  font-size: 1.4rem;
+
+
+}
+.formbox{
+  width: 80%;
+  padding: 1rem 1.5rem 0 1.5rem;
+}
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: var(--primary-color);
+}
+.blue-snackbar{
+  /* background: var(--primary-color);
+  height: 10vh;
+  font-weight: bolder;
+  max-width: 90% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 1rem !important;
+  padding: 10px !important;
+  color: #ddd;
+  text-align: center;
+   */
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--primary-color);
+  height: fit-content;
+  opacity: 0.8;
+  font-family: var(--body-font-family);
+  font-size: 3em;
+  font-weight: 600;
+}
+::ng-deep .blue-snackbar{
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--primary-color);
+  height: 60px;
+  opacity: 0.8;
+  font-family: var(--body-font-family);
+  font-size: 3em;
+  font-weight: 600;
+}
+.mat-snack-bar-container {
+  max-width: 800px;
+}
+.mat-form-field-flex{
+  width: 90%;
+}

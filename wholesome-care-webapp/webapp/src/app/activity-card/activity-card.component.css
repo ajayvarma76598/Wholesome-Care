@@ -1,0 +1,34 @@
+.example-card {
+  width: 100%;
+  box-shadow: none;
+}
+.activity-data{
+  width: 100%;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+mat-card-header mat-card-title, mat-card-subtitle{
+  font-family: var(--heading-font-family);
+}
+.details{
+  width: 55%;
+}
+.imageFitness{
+  width: 45%;
+  height: 100%;
+  margin: 0;
+}
+::ng-deep .mat-card-image{
+  margin: 0;
+}
+.imageFitness img{
+  margin-bottom: 0;
+  width: 100%;
+}
+.button{
+  width: 100%;
+  background-color: var(--primary-color);
+}

@@ -1,0 +1,288 @@
+.radioCheck{
+  width: 100%;
+  margin: 2em 1em;
+}
+
+.scoreBeltCard{
+  background: var(--secondary-color);
+}
+
+.questionType{
+
+  background: var(--primary-color);
+  font-size: 1.7em;
+  color: #dedede;
+  width: 100%;
+}
+
+.questionBox{
+  padding: 1rem;
+  padding-top: 0;
+}
+.example-radio-group{
+  width: 50%;
+  min-width: 10rem;
+  height: 25%;
+  margin: .6em 0;
+}
+.mat-checkbox-layout .mat-checkbox-label{
+  white-space: break-spaces;
+}
+.example-section {
+  margin-top: 1rem ;
+  height: 30px;
+  width: 45%;
+  white-space: break-spaces;
+  font-size: 1.2em;
+  font-weight: 500;
+
+}
+.mat-checkbox-inner-container{
+  margin: 0;
+}
+.mat-raised-button:not([class*=mat-elevation-z]){
+  font-size: 1em;
+ width: 20%;
+ min-width: 7em;
+ padding: 0 1rem;
+  margin: 2em 3em 0 3em;
+  color: #ddd ;
+  background-color: var(--primary-color) ;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.mat-raised-button.mat-button-disabled:not([class*=mat-elevation-z]){
+  background-color: var(--primary-color);
+  opacity: .5;
+  color: #ddd;
+}
+.question{
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: .8rem;
+}
+
+.box{
+  width: 80%;
+  max-width: 60rem;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ /* min-height: 80vh; */
+  background-color: var(--tertiary-color);
+  /* height: 550px; */
+  height: 75vh;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 70%);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0 5rem 0;
+  position: relative;
+}
+.main-box{
+  flex: 1;
+  width: 100%;
+  /* height: 550px; */
+  background: rgba(0, 0, 0, .7) url('../../assets/questionnaire/download.jfif') no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.image-box{
+  flex: 1;
+  width: 100%;
+  /* height: 550px; */
+  height: 100%;
+}
+.image-box img{
+  width: 100%;
+  height: 100%;
+}
+.mat-radio-label-content{
+  white-space: break-spaces;
+}
+
+.mat-radio-button {
+  font-family: var(--body-font-family);
+  font-size: 1.2em;
+  font-weight: 500;
+
+}
+.container h3 {
+  font-family: var(--body-font-family);
+  font-size: 1.6em;
+  margin-top: 2vh;
+  font-weight: bolder;
+  color: var(--primary-color);
+  margin-bottom: 2px;
+}
+.container .para{
+  width: 80%;
+  text-align: center;
+  color: var(--primary-color);
+}
+.container .para p{
+  font-family: var(--body-font-family);
+  margin: 0 0 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.mat-progress-bar {
+  height: 5px;
+}
+.mat-h2, .mat-title, .mat-typography h2{
+  font-size: 2.5em;
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  margin:0 ;
+  margin-top: 1rem;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+  border-color: var(--primary-color);
+}
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{
+  background-color: var(--primary-color);
+}
+.buttonAction{
+position: absolute;
+bottom: 1rem;
+left: 50%;
+transform: translateX(-50%);
+}
+.confirm-dialogg .mat-dialog-container{
+  padding: 0;
+}
+.questionType {
+  height: 10vh;
+}
+.blue-snackbar{
+  /* background: var(--primary-color);
+  height: 10vh;
+  font-weight: bolder;
+  max-width: 90% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 1rem !important;
+  padding: 10px !important;
+  color: #ddd;
+  text-align: center;
+   */
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--primary-color);
+  height: fit-content;
+  opacity: 0.8;
+  font-family: var(--body-font-family);
+  font-size: 3em;
+  font-weight: 600;
+}
+::ng-deep .blue-snackbar{
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--primary-color);
+  height: 60px;
+  opacity: 0.8;
+  font-family: var(--body-font-family);
+  font-size: 3em;
+  font-weight: 600;
+}
+.mat-snack-bar-container {
+  max-width: 800px;
+}
+@media screen and (max-width:940px){
+  .box{
+    height: fit-content;
+    max-height: fit-content;
+    min-width: 290px;
+    max-width: 500px;
+    background:rgba(0, 0, 0, .5) url('../../assets/questionnaire//mental.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-blend-mode: overlay;
+    margin-top: 18px;
+    color: #ddd;
+    transition: ease-in-out 1s;
+  }
+  .main-box{
+    background: none;
+    height: 447px;
+  }
+  .questionType {
+    height: 10vh;
+  }
+  .question {
+    font-size: 19px;
+}
+  .image-box{
+    display: none;
+  }
+  .mat-radio-outer-circle{
+    border-color: #ddd;
+  }
+  /* .confirm-dialog .mat-dialog-container{
+    padding: 0;
+  } */
+  .question{
+    color: #ddd;
+  }
+  .question{
+    color: #ddd;
+    font-size: 18px;
+  }
+  .radioCheck {
+    width: 100%;
+    margin: 1em 1em;
+  }
+  .container{
+    margin-top: -13px;
+  }
+  .container h3{
+    margin-top: 2.7vh;
+  }
+  .container .para{
+    width: 455px;
+  }
+}
+@media screen and (max-width:450px){
+  .container{
+    margin-top: -13px;
+  }
+.example-section ,
+  .example-radio-group {
+    width: 100%;
+    margin: 3px;
+    font-size: 12px;
+  }
+  .question{
+    color: #ddd;
+    font-size: 18px;
+  }
+  .radioCheck {
+    width: 100%;
+    margin: 1em 1em;
+  }
+  .container h3{
+    font-size: 22px;
+  }
+  .container .para{
+    width: 80%;
+  }
+  .container .para p {
+    font-family: var(--body-font-family);
+    margin: 0 0 0;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,36 @@
+.main-food{
+  width: 90%;
+  max-width: 250px;
+  /* height: 130px; */
+  /* height: 100px; */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0,.2 );
+
+}
+img{
+  width: 25%;
+  max-width: 100px;
+  height: 5vh;
+  margin-right: 12px;
+}
+mat-card-title{
+ font-family: var(--heading-font-family);
+ font-size: 1.3em;
+ font-weight: 600;
+ text-transform: capitalize;
+ color: var(--secondary-color);
+}
+mat-card-content{
+font-family: var(--body-font-family);
+font-size: 1.1em;
+ font-weight: 500;
+ color: var(--secondary-color);
+ opacity: .8;
+}
+.main-food{
+  margin: 1.2em 0;
+}
+.food-data{
+  width: 75%;
+}

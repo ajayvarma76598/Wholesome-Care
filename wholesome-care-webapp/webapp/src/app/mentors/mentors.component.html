@@ -1,0 +1,41 @@
+<div class="container">
+    <mat-tab-group mat-align-tabs="center" [selectedIndex]="selectedIndex">
+        <mat-tab label="Dietician" class="container flex-center">
+            <div class="flex-center" *ngFor="let Mentor of dietitians">
+
+                <div class="expert-card">
+                    <div class="front">
+                        <div class="circleCut"><img src={{Mentor.image}} alt=""></div>
+                        <mat-card-title>{{Mentor.name}}</mat-card-title>
+                    </div>
+                    <div class="back">
+                        <p>{{Mentor.discription}}</p>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Yoga Trainer" class="container flex-center">
+            <div class="expert-card" *ngFor="let Mentor of yogaInstructors">
+                <div class="front">
+                    <div class="circleCut"><img src={{Mentor.image}} alt=""></div>
+                    <mat-card-title>{{Mentor.name}}</mat-card-title>
+                </div>
+                <div class="back">
+                    <p>{{Mentor.discription}}</p>
+                </div>
+            </div>
+
+        </mat-tab>
+        <mat-tab label="Gym Trainer" class="container flex-center">
+            <div class="expert-card" *ngFor="let Mentor of gymInstructors">
+                <div class="front">
+                    <div class="circleCut"><img src={{Mentor.image}} alt=""></div>
+                    <mat-card-title>{{Mentor.name}}</mat-card-title>
+                </div>
+                <div class="back">
+                    <p>{{Mentor.discription}}</p>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

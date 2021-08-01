@@ -1,0 +1,4 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+4,Veg-diet,71,child,subconcept of,vegetable/fruits/milk products,milk and sandwich,"carrots,peas,beans",salad,drink water regularly,,
+6,Non-Veg,71,child,subconcept of,Meat/eggs/fruits,milk and sandwich,"chicken,rice and roti",fish and roti,eat carrots and fruits,,
+8,vegan,71,child,subconcept of,eggs/bread/milk,milk and sandwich,"chicken,rice and roti",fish and roti,eat carrots and fruits,,

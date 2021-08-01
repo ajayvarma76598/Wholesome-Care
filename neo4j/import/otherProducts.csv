@@ -1,0 +1,4 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+136,honey,40,child,part of,"Vegans may choose to avoid honey, beeswax and pollen",,,,,,
+137,beeswax,40,child,part of,"Vegans may choose to avoid honey, beeswax and pollen",,,,,,
+138,pollen,40,child,part of,"Vegans may choose to avoid honey, beeswax and pollen",,,,,,

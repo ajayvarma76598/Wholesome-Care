@@ -1,0 +1,117 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <mat-card class="cont profileCard" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image" style="background-image: url('{{imageUrl}}');"></div>
+    </mat-card-header>
+    <div class="float">
+      <button mat-icon-button (click)="onEdit(this.userDetail)">
+        <mat-icon>launch</mat-icon>
+      </button>
+    </div>
+    <div class="userDetail" fxLayout="column">
+      <h2 fxLayout="row" fxLayoutAlign="start center"><span>Name :</span><span> &nbsp; {{this.userDetail.name}}</span>
+      </h2>
+      <h2 fxLayout="row" fxLayoutAlign="start center"><span>Age :</span><span> &nbsp; {{this.userDetail.age}}</span>
+      </h2>
+      <h2 fxLayout="row" fxLayoutAlign="start center"><span>Place
+          :</span><span> &nbsp; {{this.userDetail.place}}</span></h2>
+      <h2 fxLayout="row" fxLayoutAlign="start center"><span>Plan
+          :</span><span> &nbsp; {{this.userDetail.planType}}</span></h2>
+    </div>
+    <div class="follows">
+      <a (click)='openListFollowers()'>{{followersLength}} followers</a>
+      |
+      <a (click)='openListFollowing()'>{{followingLength}} following</a>
+    </div>
+
+    <mat-card fxLayout.xs="column" fxLayout="row" class="levels">
+      <div fxLayout="column" fxLayoutAlign="center center" class="mat-list-level">
+        <span>Physical Wellness Level</span>
+        <div class="belts">
+        
+          <div style="display: block" class="chart-wrapper">
+            <canvas baseChart class="chart" [datasets]="datasets" [labels]="labels" [options]="options"
+              [chartType]="'doughnut'" height="100px" width="100px">
+            </canvas>
+            <div class="level" [ngStyle]="{'background-color':userDetail.physicalLevel}"></div>
+            <span class="level score">{{userDetail.physicalScore}} %</span>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="column" fxLayoutAlign="center center" class="mat-list-level">
+        <span>Mental Wellness Level</span>
+        <div class="belts">
+        
+          <div style="display: block" class="chart-wrapper">
+            <canvas baseChart class="chart" [datasets]="datasets" [labels]="labels" [options]="options"
+              [chartType]="'doughnut'" height="100px" width="100px">
+            </canvas>
+            <div class="level" [ngStyle]="{'background-color':userDetail.mentalLevel}"></div>
+            <span class="level score">{{userDetail.mentalScore}} %</span>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="column" fxLayoutAlign="center center" class="mat-list-level">
+        <span>Diet Wellness Level</span>
+        <div class="belts">
+      
+          <div style="display: block" class="chart-wrapper">
+            <canvas baseChart class="chart" [datasets]="datasets" [labels]="labels" [options]="options"
+              [chartType]="'doughnut'" height="100px" width="100px">
+            </canvas>
+            <div class="level" [ngStyle]="{'background-color':userDetail.dietLevel}"></div>
+            <span class="level score">{{userDetail.dietScore}} %</span>
+          </div>
+        </div>
+      </div>
+
+    </mat-card>
+    <button class="btn booking" *ngIf="userDetail.planType == 'PLATINUM'" (click)="bookingAppointment()">Book
+      Appointment</button>
+  </mat-card>
+  <div class="mentorsList" *ngIf="userDetail.planType == 'PLATINUM'" fxLayout="column" fxLayoutAlign="center center">
+    <div class="profileTitle">Mentors</div>
+    <div  fxLayout="row wrap" fxLayoutAlign="center center">
+    <div *ngFor="let mentors of mentorList">
+      <button class="mentorButton" (click)="selectAMentor(mentors)">
+          <app-mentor-profile-head [mentor]="mentors"></app-mentor-profile-head>
+          <button class="btn" (click)="toProfile(mentors)">profile</button>
+      </button>
+  </div>
+    </div>
+  </div>
+
+  <div class="appointments" *ngIf="userDetail.planType == 'PLATINUM'" fxLayout="column" fxLayoutAlign="center center">
+    <div class="profileTitle">Appointments Today</div>
+    <div class="appointment" *ngFor="let appointment of appointments" fxLayout="row" fxLayout.xs="column"
+      fxLayoutAlign.xs="center center" fxLayoutAlign="space-between center">
+      <div class="dateBox">
+        <h2 class="date">{{date | date:'dd'}}</h2>
+        <h4>{{date | date:'EEE'|uppercase}}</h4>
+      </div>
+      <div class="appointmentTime">
+        <h2>{{appointment.appointment.openingTime}}-{{appointment.appointment.closingTime}}</h2>
+      </div>
+      <div class="customerName">
+        <h2>{{appointment.mentorName}}</h2>
+        <h4>{{appointment.mentorExpertize}}</h4>
+      </div>
+    </div>
+  </div>
+
+
+  <mat-card class="cont activities" fxLayout="column" fxLayoutAlign="center center">
+    <div class="profileTitle pastAct"><span>{{name}}</span>, your past done activities</div>
+    <mat-tab-group class="activityData" [selectedIndex] = "lastDayIndex">
+      <div *ngFor='let day of days'>
+        <mat-tab label={{day.localDate}}>
+          <mat-list>
+            <mat-list-item class="doneActivity" *ngFor='let doneActivites of day.plan.activitiesDone'>{{doneActivites.name}}
+            </mat-list-item>
+          </mat-list>
+        </mat-tab>
+      </div>
+    </mat-tab-group>
+  </mat-card>
+
+</div>

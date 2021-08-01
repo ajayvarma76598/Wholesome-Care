@@ -1,0 +1,110 @@
+a {
+    color: inherit;
+  }
+  .flex-center{
+    flex-wrap: wrap;
+  }
+  
+  .blog-card {
+    --bg-filter-opacity: 0.5;
+    background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+    width: 300px;
+    height: 500px;
+    font-size: 1.5em;
+    
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 2em auto;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    transition: all, .6;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 5px 35px rgba(0, 0, 0,.7 );
+  }
+  
+  .blog-card:hover {
+    transform: rotate(0);
+  }
+  
+  .blog-card h1 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+  
+  .blog-card p {
+    font-size: 0.75em;
+    margin-top: 0.5em;
+    line-height: 2em;
+  }
+  
+  .blog-card .tags {
+    display: flex;
+  }
+  
+  .blog-card .tags .tag {
+    font-size: 0.75em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, .6s;
+  }
+  
+  .blog-card:hover .tags .tag {
+    background: #3c3163;
+    color: white;
+  }
+  
+  .blog-card .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+    padding: 1em;
+    line-height: 1em;
+    opacity: .8;
+  }
+  
+  .blog-card:before, .blog-card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, .6s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .blog-card:before {
+    background: #ddd;
+    width: 250%;
+    height: 250%;
+  }
+  
+  .blog-card:after {
+    background: white;
+    width: 200%;
+    height: 200%;
+  }
+  
+  .blog-card:hover {
+    color: #3c3163;
+  }
+  
+  .blog-card:hover:before, .blog-card:hover:after {
+    transform: scale(1);
+  }
+
+  mat-tab-group{
+    padding-top:5rem ;
+}

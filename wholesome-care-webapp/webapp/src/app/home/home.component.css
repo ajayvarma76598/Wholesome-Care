@@ -1,0 +1,419 @@
+:host{
+    box-sizing: border-box;
+    font-family: var(--body-font-family);
+
+}
+.mat-h1, .mat-headline, .mat-typography h1{
+    font-family: var(--heading-font-family);
+    line-height: 1.7;
+    text-decoration: solid;
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-decoration: double;
+    line-height: 1;
+}
+.mat-h2, .mat-title, .mat-typography h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+.mat-body, .mat-body-1, .mat-typography{
+    font-family: var(--body-font-family);
+}
+.mat-flat-button{
+    background-color: var(--secondary-color);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.title{
+    text-align: center;
+}
+
+.flex-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+.landingPage{
+    width: 100%;
+    min-height: 92vh;
+    height: fit-content;
+    background: rgba(0, 0, 0, .7) url(../../assets/images/landingPageBG.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-blend-mode: overlay;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.content{
+    flex-direction: column;
+}
+.qoute ,.card-space{
+    flex: 1;
+}
+
+.login-card{
+    margin: 0 auto 10rem auto;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.login-card h2{
+    padding: 2rem 0;
+}
+
+
+.login-card span{
+    color: var(--primary-color);
+    font-weight: 800;
+}
+.qoute h1{
+    padding: 3rem 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+.landingPage .botbtn,
+.landingPage .sosbtn{
+    background-color: var(--tertiary-color);
+    transform: scale(1.2);
+    position: absolute;
+    top: 85%;
+
+}
+.landingPage .botbtn{
+    left: 85%;
+}
+.landingPage .sosbtn{
+    left: 15%;
+}
+.landingPage .botbtn:hover ,
+.landingPage .sosbtn:hover{
+    transform: scale(1.1);
+
+}
+
+/* for all section */
+
+
+/* Service section styling */
+
+.works{
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+.work-card{
+    background-color: #fff;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0,.7 );
+    border-radius: 5px;
+    /* transition: .6s; */
+}
+.work-card:hover{
+    transform: scale(1.1);
+}
+.work-card img{
+    width: 100%;
+    height: 50%;
+}
+
+.work-card h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .7);
+}
+.work-card p{
+    margin-top:20px ;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .7);
+}
+.work-card button{
+    margin-top:auto ;
+    background-color: var(--tertiary-color);
+}
+
+/* achievement section styling */
+.achievement{
+    background-color: var(--tertiary-color);
+
+
+}
+.info-card{
+    background-image: linear-gradient(to right ,var(--primary-color) 40%,var(--secondary-color));
+    color: #fff;
+    padding: 2rem;
+    position: relative;
+
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .5);
+}
+
+.info-left .info-heading{
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    line-height: 1;
+
+}
+.info-left .info-discription{
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    line-height: 1.5;
+}
+.info-left .info-button{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    transition: all .5s;
+    border-radius: 2rem;
+}
+.info-left .info-button:hover{
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .5);
+}
+.info-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 5rem;
+    position: relative;
+}
+.info-right::before,
+.info-right::after{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 50%;
+}
+.info-right::before{
+    width: 100%;
+    height: 1px;
+    transform: translateY(-50%);
+}
+.info-right::after{
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.info-right .stat-group{
+    padding: 2.5rem;
+    text-align: center;
+}
+.info-right .stat-group .stat-number{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+}
+.info-right .stat-group .stat-name{
+    text-transform: uppercase;
+}
+/* experts section styling */
+.expert{
+    min-height: 50vh;
+    height: fit-content;
+
+}
+
+.expert-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+/* testimonals section styling */
+.testimonals{
+    background-color: var(--secondary-color);
+   box-shadow: 0 10px 30px rgba(0, 0, 0, .7);
+
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 3rem 0;
+    margin: 30px auto 100px auto;  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    max-width: 400px;
+    min-width: 280px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    filter: blur(4px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .5);
+  }
+
+  .swiper-slide-active{
+      filter: blur(0px);
+      background-color: #fff;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, .7);
+  }
+  .testimonalCard{
+   position: relative;
+
+    padding: 40px;
+    padding-top: 90px;
+    color: #999;
+
+  }
+  .testimonalCard .formatQuote{
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      opacity: .5;
+      font-size: 64px;
+  }
+  .testimonalCard .customerDetails{
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+  }
+  .testimonalCard .testimonalContent p{
+      font-size: 16px;
+  }
+
+  .testimonalCard .customerDetails .imgBox{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  .testimonalCard .customerDetails .imgBox img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .testimonalCard .customerDetails h3{
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: var(--primary-color);
+      line-height: 1.1em;
+      margin: 0 auto;
+  }
+  .testimonalCard .customerDetails h3 span{
+      font-size: 16px;
+      color: #666;
+  }
+  .rating{
+      margin: 1.5rem auto;
+      color: var(--primary-color);
+  }
+  .swiper-container-3d .swiper-slide-shadow-left,
+  .swiper-container-3d .swiper-slide-shadow-right{
+      background-image: none;
+  }
+
+.testimonals>.title{
+   color: rgba(255, 255, 255, 0.8);
+
+}
+
+/* resourses section styling */
+
+
+
+@media screen and (min-width:760px) {
+    .info-card{
+        max-width: 90rem;
+        display: flex;
+        align-items: center;
+        padding: 10rem;
+    }
+
+    .info-left{
+        flex: 1;
+        padding-right: 3.5rem;
+    }
+    .info-right{
+        flex: 1;
+        margin-top: 0;
+    }
+    .content{
+        flex-direction: row;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 5rem;
+        max-width: 20rem;
+    }
+}
+
+.section{
+  text-align:center;
+}
+.body{
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+.form-control{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+.align
+{
+text-align:center;
+border:3px solid grey;
+width:80%;
+margin:auto;
+margin-top:3%;
+}
+.button{
+  text-align:center;
+  margin-top: 1%;
+  margin:auto;
+  margin-top: 100%;
+}
+.table{
+  text-align:center;
+  margin-top: 5%;
+  width:60%;
+  margin-left: 20%;
+
+}
+.space{
+  height:35px;
+}
+.close{
+  float:right;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+
+}
+.img-box {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+.img-box img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .7);
+}
+  .end p {
+    font-family: var(--heading-font-family);
+    color: rgb(75, 75, 75);
+    font-size: 2em;
+    margin-top: 0.5em;
+    line-height: 2em;
+  }

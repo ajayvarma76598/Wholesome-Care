@@ -1,0 +1,62 @@
+<div class="change">
+  <div class="card">
+    <div class="login-title">Register</div>
+    <form [formGroup]="register" class="formbox" (ngSubmit)="onSubmit()">
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input type="text" matInput placeholder="Enter Name*" formControlName="name">
+          <mat-error *ngIf="register.get('name').invalid && (register.get('name').dirty || register.get('name').touched)">
+            <mat-error *ngIf="register.get('name').errors?.required">Name is required field.</mat-error>
+            <mat-error *ngIf="register.get('name').errors?.minlength">Name has atleast 5 characters.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="text" matInput placeholder="Enter Email*" formControlName="email">
+          <mat-error
+            *ngIf="register.get('email').invalid && (register.get('email').dirty || register.get('email').touched)">
+            <mat-error *ngIf="register.get('email').errors?.required">Email is required field.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Age</mat-label>
+          <input type="text" matInput placeholder="Enter Age" formControlName="age">
+          <mat-error
+            *ngIf="register.get('age').invalid && (register.get('age').dirty || register.get('age').touched)">
+            <mat-error *ngIf="register.get('age').errors?.required">Age is required field.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Place</mat-label>
+          <input type="text" matInput placeholder="Enter Place" formControlName="place">
+          <mat-error
+            *ngIf="register.get('place').invalid && (register.get('place').dirty || register.get('place').touched)">
+            <mat-error *ngIf="register.get('place').errors?.required">Place is required field.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+    
+      <div>
+        <mat-form-field class="full-width">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput placeholder="password" formControlName="password" name="password">
+          <mat-error
+            *ngIf="register.get('password').invalid && (register.get('password').dirty || register.get('password').touched)">
+            <mat-error *ngIf="register.get('password').errors?.required">Password is required field.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <button class="btn" type="submit">Register</button>
+    </form>
+  </div>
+</div>
+

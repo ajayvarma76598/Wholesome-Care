@@ -1,0 +1,13 @@
+<!-- <mat-card *ngIf="data.message!=null || data.message!=undefined" class="card" fxLayout="row" fxLayoutAlign="center center">{{message}}</mat-card> -->
+<mat-card class="card">
+  <h1>{{name}} has done these activities</h1>
+  <hr>
+  <div fxLayout="row" fxLayoutAlign="space-around center">
+  <ul>
+    <li *ngFor='let doneTask of doneTasks'>{{doneTask.name}}</li>
+  </ul>
+  <div class="imageBox">
+    <img src="https://media.giphy.com/media/3oKIPavRPgJYaNI97W/giphy.gif" alt="Exercise GIF Image">
+  </div>
+</div>
+</mat-card>

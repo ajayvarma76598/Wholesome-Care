@@ -1,0 +1,37 @@
+  <div class="container">
+  
+<div class="main">
+  <div class="image">
+    <img mat-card-image src="https://images.unsplash.com/photo-1494342645198-ff89d7c12b8d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" alt="Photo of a Shiba Inu">
+    <form [formGroup]= "InputForm" (ngSubmit)= "onSubmit()">
+        <mat-form-field  class="example-full-width" appearance="fill" >
+         
+          <mat-label>write something about this photo</mat-label>
+          <textarea matInput  formControlName="input" placeholder=""></textarea>
+
+        </mat-form-field>
+<!--        
+        <button  mat-raised-button  style ="background-color:  #003539;color:white;"
+        type="submit"> -->
+        <button class="icon"> 
+        <mat-icon style ="color:white;"  type="submit">send</mat-icon>
+      </button>
+        <!-- </button>  -->
+
+        
+   
+ </form>
+
+    </div>
+  <div class="content" style="background-image: url(../../assets/questionnaire/backgroundBefore.jpeg);">
+    <div class="for"*ngFor="let note of this.result | slice:1" >
+    <div  class="buttonBlock" fxLayout="column" fxLayoutAlign='center center'>
+         <button class ="ghost"style ="background-color:  #003539;color:white" type="submit" mat-raised-button  (click)="onResourceSubmit(note)">{{note}}</button>
+    </div>   
+      </div>
+<div class="mainSecond" fxLayout="column" fxLayoutAlign='center center'>
+  </div>
+  </div>
+</div>
+</div>
+

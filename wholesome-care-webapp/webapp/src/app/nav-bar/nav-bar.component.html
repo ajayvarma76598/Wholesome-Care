@@ -1,0 +1,31 @@
+<!-- <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center" fxLayoutAlign.xs="center center" >
+    <span><a routerLink="home" routerLinkActive="active" ><img src="../../assets/images/logofinal.png" alt=""></a></span>
+    <mat-list fxLayout="row" fxHide.xs="true">
+        <mat-list-item *ngIf="!isLoggedIn"> <a class="nav-link" routerLink="login" routerLinkActive="active">Login</a> </mat-list-item>
+        <mat-list-item *ngIf="isHomePage"> <a class="nav-link" routerLink="pricing" routerLinkActive="active">Pricing</a> </mat-list-item>
+        <mat-list-item *ngIf="isHomePage"> <a class="nav-link" routerLink="mealplan" routerLinkActive="active">Meal Plan</a> </mat-list-item>
+        <mat-list-item *ngIf="isSamplePage"> <a class="nav-link" routerLink="sampleplan" routerLinkActive="active">Wellness Plan</a> </mat-list-item>
+        <mat-list-item *ngIf="isSentiment"> <a class="nav-link" routerLink="analysis" routerLinkActive="active">Sentiment Analysis</a> </mat-list-item> -->
+        <!-- <mat-list-item *ngIf="isSentiment"> <a class="nav-link" routerLink="page" routerLinkActive="active">page</a> </mat-list-item> -->
+
+        <!-- <mat-list-item *ngIf="isLoggedIn"> <a href class="nav-link" (click)="logout()">LogOut</a> </mat-list-item>
+
+    </mat-list>
+
+
+</mat-toolbar> -->
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-between center" fxLayoutAlign.xs="center center">
+  <span><a routerLink="home" routerLinkActive="active" ><img src="../../assets/images/logofinal.png" alt=""></a></span>
+  <mat-list fxLayout="row" fxHide.xs="true">
+      <mat-list-item *ngIf="!isLoggedIn "> <a *ngIf="!isLogIn" class="nav-link" routerLink="login" routerLinkActive="active">Login</a> </mat-list-item>
+     <div *ngIF="isMentor">
+      <mat-list-item *ngIf="isHomePage"> <a class="nav-link" routerLink="pricing" routerLinkActive="active">Pricing</a> </mat-list-item>
+      <mat-list-item *ngIf="isHomePage"> <a class="nav-link" routerLink="mealplan" routerLinkActive="active">Meal Plan</a> </mat-list-item>
+      <mat-list-item *ngIf="!isSamplePage && !isDashboard"> <a class="nav-link" routerLink="sampleplan" routerLinkActive="active">Wellness Plan</a> </mat-list-item>
+      <mat-list-item *ngIf="isProfile"> <a class="nav-link" routerLink="dashboard" routerLinkActive="active">Dashboard</a> </mat-list-item>
+      <mat-list-item *ngIf="!isSentiment && !isDashboard"> <a class="nav-link" routerLink="analysis" routerLinkActive="active">Self Assessment</a> </mat-list-item>
+     </div>
+      <!-- <mat-list-item *ngIf="isSentiment"> <a class="nav-link" routerLink="page" routerLinkActive="active">page</a> </mat-list-item> -->
+      <mat-list-item *ngIf="isLoggedIn"> <a href class="nav-link" (click)="logout()">LogOut</a> </mat-list-item>
+  </mat-list>
+</mat-toolbar>

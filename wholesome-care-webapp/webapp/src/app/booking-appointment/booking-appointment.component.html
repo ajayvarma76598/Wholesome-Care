@@ -1,0 +1,54 @@
+<mat-tab-group mat-align-tabs="center" [selectedIndex]="selectedIndex">
+    <mat-tab label="Mentor">
+        <div class="matBox" fxLayout="row" fxLayoutAlign="center center">
+            <div class="mentorList" *ngIf="errMessage.length==0 ">
+                <div *ngFor="let mentors of mentorList">
+                    <button class="button" (click)="selectAMentor(mentors)">
+                        <app-mentor-profile-head [mentor]="mentors"></app-mentor-profile-head>
+                    </button>
+                </div>
+            </div>
+            <div class="error" *ngIf="errMessage.length>0">
+                <h3>{{errMessage}}</h3>
+                <button class="btn" (click)="retry()">Retry</button>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="timing">
+        <div class="matBox" fxLayout="row" fxLayoutAlign="center center">
+
+            <div class="timing" *ngIf="errMessage.length==0 && isMentorSelcted ">
+                <div *ngFor="let slot of appointmentList">
+                    <button class="button" *ngIf="!slot.isbooked" (click)="selectATime(slot)">{{slot.openingTime}} -
+                        {{slot.closingTime}}</button>
+                </div>
+            </div>
+            <div class="error" *ngIf="errMessage.length>0 || !isMentorSelcted">
+                <h3 *ngIf="!isMentorSelcted && !errMessage.length>0">Please Select The Mentor</h3>
+                <h3 *ngIf="errMessage.length>0">{{errMessage}}</h3>
+                <button class="btn" (click)="back()">back</button>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="confirmation">
+        <div class="matBox" fxLayout="row" fxLayoutAlign="center center">
+
+            <div class="confirm" *ngIf="isMentorSelcted && isTimingSelected" fxLayout="column"
+                fxLayoutAlign="start center">
+                <h3>You are booked with {{mentorSelected.name}}</h3>
+                <h4>Mentor Name: {{mentorSelected.name}}
+                </h4>
+                <h4>Timing : {{appointmentSelected.openingTime}}</h4>
+                <div mat-dialog-actions>
+                    <button class="btn" [mat-dialog-close]="mentorSelected">Update</button>
+                    <button class="btn" mat-dialog-close>cancel</button>
+                </div>
+            </div>
+            <div class="error" *ngIf="!isMentorSelcted || !isTimingSelected">
+                <h3 *ngIf="!isMentorSelcted">Please Select The Mentor</h3>
+                <h3 *ngIf="!isTimingSelected">Please Select the Timing</h3>
+                <button class="btn" (click)="back()">Back</button>
+            </div>
+        </div>
+    </mat-tab>
+</mat-tab-group>

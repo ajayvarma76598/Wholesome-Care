@@ -1,0 +1,5 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+64,Heavy gardening,52,child,part of,Run for 6 KM,,,,,1,
+5,pushups,52,child,part of,Do 30 push up's a day,,,,,2,
+21,pull up's,52,child,part of,pull ups to be done 1set of 15times each,,,,,3,
+65,Lifting weights,52,child,part of,Run for 6 KM,,,,,1,

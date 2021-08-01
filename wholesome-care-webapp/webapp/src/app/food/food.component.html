@@ -1,0 +1,9 @@
+<div fxLayout="row" fxLayoutAlign="start center" class="main-food">
+  <img [src]='food.imageUrl' alt='Food Image'>
+  <div class="food-data"
+  fxLayout="column" >
+    <mat-card-title>{{food.name}}</mat-card-title>
+    <mat-card-content>{{food.quantity}} {{food.unit}} | {{food.calorie}} Cal</mat-card-content>
+  </div>
+</div>
+

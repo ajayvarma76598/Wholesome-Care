@@ -1,0 +1,7 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+135,Gelatin,37,child,part of,"Gelatin, lard, carmine, isinglass, oleic acid and suet",,,,,,
+135,lard,37,child,part of,"Gelatin, lard, carmine, isinglass, oleic acid and suet",,,,,,
+135,carmine,37,child,part of,"Gelatin, lard, carmine, isinglass, oleic acid and suet",,,,,,
+135,isinglass,37,child,part of,"Gelatin, lard, carmine, isinglass, oleic acid and suet",,,,,,
+135,oleic acid,37,child,part of,"Gelatin, lard, carmine, isinglass, oleic acid and suet",,,,,,
+135,suet,37,child,part of,"Gelatin, lard, carmine, isinglass, oleic acid and suet",,,,,,

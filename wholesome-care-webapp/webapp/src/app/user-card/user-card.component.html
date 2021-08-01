@@ -1,0 +1,10 @@
+<mat-card class="user-card" fxLayout="column">
+  <div class="userImage" fxLayout="row" fxLayoutAlign="center center">
+    <img mat-card-image [src]='imageUrl' alt="Photo of a Shiba Inu">
+  </div>
+  <mat-card-header fxLayout="row" fxLayoutAlign="center center">
+    <mat-card-title>{{suggestion.name}}</mat-card-title>
+    <mat-card-subtitle>{{suggestion.age}} years | {{suggestion.place}}</mat-card-subtitle>
+  </mat-card-header>
+  <button class="button" (click)="followUser(suggestion.email, suggestion.name)" mat-raised-button >Follow</button>
+</mat-card>

@@ -1,0 +1,123 @@
+<div class="content">
+  <div class="container" id="container" >
+	<div class="form-container sign-up-container">
+
+  <form action="#" [formGroup]="register" class="formbox" (ngSubmit)="onClick()">
+
+			<h1>Get Started</h1>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput placeholder="Enter Email*" formControlName="email">
+          <mat-error
+            *ngIf="register.get('email').invalid && (register.get('email').dirty || register.get('email').touched)">
+            <mat-error *ngIf="register.get('email').errors?.required">Email is required field.</mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="password" formControlName="password" name="password">
+        <mat-error
+          *ngIf="register.get('password').invalid && (register.get('password').dirty || register.get('password').touched)">
+          <mat-error *ngIf="register.get('password').errors?.required">Password is required field.</mat-error>
+        </mat-error>
+      </mat-form-field>
+            <div class="a">
+                <mat-form-field appearance="fill">
+                  <mat-label>Name</mat-label>
+                  <input type="text" matInput placeholder="Enter Name*" formControlName="name">
+                  <mat-error *ngIf="register.get('name').invalid && (register.get('name').dirty || register.get('name').touched)">
+                    <mat-error *ngIf="register.get('name').errors?.required">Name is required field.</mat-error>
+                    <mat-error *ngIf="register.get('name').errors?.minlength">Name has atleast 5 characters.</mat-error>
+                  </mat-error>
+                </mat-form-field>
+              </div>
+
+
+              <div>
+                <mat-form-field appearance="fill">
+                  <mat-label>Age</mat-label>
+                  <input type="text" matInput placeholder="Enter Age" formControlName="age">
+                  <mat-error
+                    *ngIf="register.get('age').invalid && (register.get('age').dirty || register.get('age').touched)">
+                    <mat-error *ngIf="register.get('age').errors?.required">Age is required field.</mat-error>
+                  </mat-error>
+                </mat-form-field>
+              </div>
+              <div>
+
+                  <mat-label>Gender</mat-label>
+                  <input type="radio" name="gender" value='Male' formControlName="gender" >Male
+                  <input type="radio" name='gender' value='Female' formControlName="gender" >Female
+                  <mat-error
+                  *ngIf="register.get('gender').invalid && (register.get('gender').dirty || register.get('gender').touched)">
+
+                  <mat-error *ngIf="register.get('gender').errors?.required">Gender is required field.</mat-error>
+                </mat-error>
+
+
+
+              </div>
+              <div>
+                <mat-form-field appearance="fill">
+                  <mat-label>City</mat-label>
+                  <input type="text" matInput placeholder="Enter Place" formControlName="place">
+                  <mat-error
+                    *ngIf="register.get('place').invalid && (register.get('place').dirty || register.get('place').touched)">
+                    <mat-error *ngIf="register.get('place').errors?.required">Place is required field.</mat-error>
+                  </mat-error>
+                </mat-form-field>
+              </div>
+
+
+
+
+			<button style ="background-color:  #003539" type="submit">Register</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+            <form action="#" *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+
+			<h1>Let's Get Started</h1>
+			<div class="social-container">
+				<a href="{{ googleURL }}" class="social"><i class="fab fa-google-plus-g"></i></a>
+
+			</div>
+			<span>or use your account</span>
+
+            <mat-form-field class="fill">
+                <mat-label for="username">Email</mat-label>
+                <input class="input1" type="text" matInput name="username" [(ngModel)]="form.username" required #username="ngModel"
+                  placeholder="Email">
+                <mat-error *ngIf="f.submitted && username.invalid">Username is required!</mat-error>
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label for="password">Password</mat-label>
+                <input class="input1"  type="password" matInput name="password" [(ngModel)]="form.password" required minlength="6"
+                  #password="ngModel" placeholder="password">
+                <mat-error *ngIf="f.submitted && password.invalid">Password is required! </mat-error>
+
+              </mat-form-field>
+
+
+			<button style ="background-color:  #003539">Sign In</button>
+            <mat-error *ngIf="isLoginFailed">Login failed: {{ errorMessage }}></mat-error>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button  style="font-weight: 900; " class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button  style="font-weight: 900; "class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

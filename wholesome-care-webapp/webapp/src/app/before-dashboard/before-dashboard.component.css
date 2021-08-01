@@ -1,0 +1,88 @@
+.container h3 {
+  font-family: var(--body-font-family);
+  font-size: 1.6em;
+  margin-top: 2vh;
+  font-weight: bolder;
+  color: var(--primary-color);
+  margin-bottom: 2px;
+  margin-top: 0;
+  line-height: 2;
+}
+.container .para{
+  width: 80%;
+  color: var(--primary-color);
+  margin: auto;
+}
+.container .para p{
+  font-family: var(--body-font-family);
+  margin: 0 0 0;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.main{
+  width: 75%;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary-color);
+  height: 75vh;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 70%);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem auto;
+}
+.image{
+  width: 50%;
+  height: 100%;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  width: 50%;
+  height: 100%;
+}
+.container{
+  text-align: center;
+  margin-top: 0;
+  height: 100vh;
+}
+.buttonBlock{
+  text-align: center;
+}
+.contentBox{
+  height: 100%;
+}
+.click{
+ margin-bottom: 5rem;
+}
+.buttonBefore{
+  background: var(--primary-color);
+  margin-top: 0;
+  width: auto;
+}
+.buttonBeforeActivatePlan{
+  background: var(--primary-color);
+  margin-top: 1em;
+  width: 90%;
+  padding: .8em 1em;
+  /* text-overflow: clip; */
+  white-space: pre-wrap;
+  line-height: 1.3em;
+}
+.gifImage{
+  width: 80%;
+  margin: auto;
+}
+.gifImage img{
+  width: 100%;
+  height: 100%;
+}
+.clickable{
+  width: 100%;
+  margin-right: 22px;
+}

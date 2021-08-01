@@ -1,0 +1,122 @@
+Id:ID,name,quantity,unit,calorie,sugar,carbs,protein
+401,LukeWarm Water,2,Glass,0,0,0,0
+402,black coffee,1,Cup,0,0,0,0.3
+403,Lemon Water,1,Glass,0,0.1,0,0
+404,Idli Sambhar,1,Plate,0,0.3,0,4.3
+405,Multi grain Bread,4,Slices,0,1.7,0,3.4
+406,Fresh fruits,3,Servings,0,16.3,0,1.4
+407,dry fruits,4,Piece,0,50.8,0,1.4
+408,green tea,1,Cup,0,0,0,0.5
+409,Salad,2,Servings,0,2.2,0,1.5
+410,Multigrain Chapati,2,Medium,0,1.2,0,3.1
+411,Mix Daal,1,Bowl,0,4.5,0,14.2
+412,mixed-vegetable curry,1,Bowl,0,2,0,28.3
+413,brown rice,1,Bowl,0,0,0,2.3
+414,Chickpea curry,1,Bowl,0,9.5,0,9.7
+415,Mix Veg Soup,1,Bowl,0,4,0,3.7
+416,Palak Paneer Pulao,1,Servings,0,4.8,0,17.5
+417,chicken curry with mixed vegetables,1,Servings,0,4.6,0,30.1
+418,Mix Veg Khichdi ,1,Servings,0,5.2,0,8.2
+419,errrr,1,Servings,0,10,0,10
+420,LukeWarm Water,2,Glass,0,0,0,0
+421,Lemon Honey Water,1,Glass,0,17.4,0,0.1
+422,Juice,1,Glass,0,28.9,0,0.3
+423,black coffee,1,Cup,0,0,0,0.3
+424,Lemon Water,1,Glass,0,0.1,0,0
+425,Idli Sambhar,1,Plate,0,0.3,0,4.3
+426,Multi grain Bread,2,Slices,0,1.7,0,3.4
+427,Fresh fruits,4,Servings,0,16.3,0,1.4
+428,eggs,2,Piece,0,0.2,0,6.3
+429,dry fruits,10,Piece,0,50.8,0,1.4
+430,green tea,1,Cup,0,0,0,0.5
+431,flex seeds,1,Tablespoon,0,,0,
+432,Curd,1,Bowl,0,5.3,0,3.9
+433,Salad,3,Servings,0,2.2,0,1.5
+434,Multigrain Chapati,2,Medium,0,1.2,0,3.1
+435,Mix Daal,1,Bowl,0,4.5,0,14.2
+436,Tofu,1,Cup,0,0.7,0,10
+437,mixed-vegetable curry,1,Bowl,0,2,0,28.3
+438,brown rice,1,Bowl,0,0,0,2.3
+439,Chickpea curry,1,Bowl,0,9.5,0,9.7
+440,Coconut Water,1,Glass,0,2.6,0,0.7
+441,Sprouts,1,Bowl,0,0.2,0,4
+442,Mix Veg Soup,1,Bowl,0,4,0,3.7
+443,Palak Paneer Pulao,1,Servings,0,4.8,0,17.5
+444,chicken curry with mixed vegetables,1,Servings,0,4.6,0,30.1
+445,Mix Veg Khichdi ,1,Servings,0,5.2,0,8.2
+446,turmeric milk,1,Glass,0,0.1,0,8.9
+448,LukeWarm Water,2,Glass,0,0,0,0
+449,Cumin water,1,Cup,0,0,0,0.4
+450,Cinamon Water,1,Glass,0,0,0,0.4
+451,Lemon Honey Water,1,Glass,0,17.4,0,0.1
+452,Juice,1,Glass,0,28.9,0,0.3
+453,black coffee,1,Cup,0,0,0,0.3
+454,Lemon Water,1,Glass,0,0.1,0,0
+455,protien drink,1,Glass,0,1.8,0,19.5
+456,Idli Sambhar,1,Plate,0,0.3,0,4.3
+457,MultiGrain Parathas,1,Medium,0,4.2,0,6.4
+458,Oats with milk,1,Bowl,0,0.4,0,8.9
+459,Multi grain Bread,2,Slices,0,1.7,0,3.4
+460,Fresh fruits,5,Servings,0,16.3,0,1.4
+461,eggs,3,Piece,0,0.2,0,6.3
+462,dry fruits,10,Piece,0,50.8,0,1.4
+463,green tea,1,Cup,0,0,0,0.5
+464,flex seeds,1,Tablespoon,0,,0,
+465,Curd,1,Bowl,0,5.3,0,3.9
+466,Salad,4,Servings,0,2.2,0,1.5
+467,Multigrain Chapati,2,Medium,0,1.2,0,3.1
+468,Mix Daal,1,Bowl,0,4.5,0,14.2
+469,Tofu,1,Bowl,0,0.7,0,10
+470,mixed-vegetable curry,1,Bowl,0,2,0,28.3
+471,brown rice,1,Bowl,0,0,0,2.3
+472,Low Fat Dahi Chicken,1,Bowl,0,6,0,37.1
+473,Chickpea curry,1,Bowl,0,9.5,0,9.7
+474,Soya chunks,1,Bowl,0,,0,
+475,Coconut Water,1,Glass,0,2.6,0,0.7
+476,Sprouts,1,Bowl,0,0.2,0,4
+477,Mix Veg Soup,1,Bowl,0,4,0,3.7
+478,Palak Paneer Pulao,1,Servings,0,4.8,0,17.5
+479,chicken curry with mixed vegetables,1,Servings,0,4.6,0,30.1
+480,Mix Veg Khichdi ,1,Servings,0,5.2,0,8.2
+481,Low Fat Butter Chicken,1,Bowl,0,6.7,0,23.3
+482,turmeric milk,1,Glass,0,0.1,0,8.9
+484,LukeWarm Water,2,Glass,0,0,0,0
+485,Cumin water,1,Cup,0,0,0,0.4
+486,apple cider vinegar,2,Tablespoon,0,0.1,0,0
+487,Cinamon Water,1,Glass,0,0,0,0.4
+488,Lemon Honey Water,1,Glass,0,17.4,0,0.1
+489,yogurt ,1,Bowl,0,12,0,9
+490,Juice,1,Glass,0,28.9,0,0.3
+491,black coffee,1,Cup,0,0,0,0.3
+492,Lemon Water,1,Glass,0,0.1,0,0
+493,protien drink,1,Glass,0,1.8,0,19.5
+494,Idli Sambhar,1,Plate,0,0.3,0,4.3
+495,MultiGrain Parathas,1,Medium,0,4.2,0,6.4
+496,Oats with milk,1,Bowl,0,0.4,0,8.9
+497,Multi grain Bread,4,Slices,0,1.7,0,3.4
+498,Fresh fruits,3,Servings,0,16.3,0,1.4
+499,eggs,2,Piece,0,0.2,0,6.3
+500,dry fruits,10,Piece,0,50.8,0,1.4
+501,green tea,1,Cup,0,0,0,0.5
+502,flex seeds,1,Tablespoon,0,,0,
+503,Curd,1,Bowl,0,5.3,0,3.9
+504,Salad,2,Servings,0,2.2,0,1.5
+505,Multigrain Chapati,2,Medium,0,1.2,0,3.1
+506,Mix Daal,1,Bowl,0,4.5,0,14.2
+507,Tofu,1,Bowl,0,0.7,0,10
+508,mixed-vegetable curry,1,Bowl,0,2,0,28.3
+509,brown rice,1,Bowl,0,0,0,2.3
+510,Low Fat Dahi Chicken,1,Bowl,0,6,0,37.1
+511,Chickpea curry,1,Bowl,0,9.5,0,9.7
+512,Soya chunks,1,Bowl,0,,0,
+513,Coconut Water,1,Glass,0,2.6,0,0.7
+514,Sprouts,1,Bowl,0,0.2,0,4
+515,Mix Veg Soup,1,Bowl,0,4,0,3.7
+516,Palak Paneer Pulao,1,Servings,0,4.8,0,17.5
+517,chicken curry with mixed vegetables,1,Servings,0,4.6,0,30.1
+518,Mix Veg Khichdi ,1,Servings,0,5.2,0,8.2
+519,Low Fat Butter Chicken,1,Bowl,0,6.7,0,23.3
+520,Quinoa,1,Bowl,0,0.8,0,4.1
+521,Kidney Beans,1,Bowl,0,0.6,0,15.5
+522,Chopped Mushrooms,1,Servings,0,0.3,0,0.3
+523,turmeric milk,1,Glass,0,0.1,0,8.9

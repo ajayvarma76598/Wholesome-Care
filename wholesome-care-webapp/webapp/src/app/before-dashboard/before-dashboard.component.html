@@ -1,0 +1,36 @@
+<div class="container" style="background-image: url(../../assets/questionnaire/whiteWoodenBackground.jpg);">
+  <h3>Welldone {{userName.displayName | titlecase }}!</h3>
+  <div class="para">
+    <p>You have successfully submitted your answers.</p>
+  </div>
+  <div class="main">
+    <div class="image">
+      <img src="../../assets/questionnaire/quotationBeforeDashboard.jpg" alt="Motivational Picture">
+    </div>
+    <div class="content" style="background-image: url(../../assets/questionnaire/backgroundBefore.jpeg);">
+      <div class="contentBox" *ngIf="isStop=='notStart'" fxLayout="column" fxLayoutAlign="center center">
+        <div class="gifImage">
+          <img src="../../assets/questionnaire/yogaGif.gif" alt="Yoga Gif">
+        </div>
+        <div class="buttonBlock" fxLayout="column" fxLayoutAlign='center center'>
+          <div class="click" fxLayout="row" fxLayoutAlign="space-around center">
+            <!-- <img *ngIf='activated==null' src="https://www.animatedimages.org/data/media/111/animated-arrow-image-0149.gif" alt="animated-arrow-image-0149" /> -->
+            <button [disabled]='canRedirectToDashBoard' class="buttonBeforeActivatePlan" (click)="activateYourPlan()"
+              mat-raised-button color="primary">Please Click here to activate your wellness plan</button>
+          </div>
+          <div class="clickable" fxLayout="row" fxLayoutAlign="end center">
+            <img *ngIf='canRedirectToDashBoard'
+              src="https://www.animatedimages.org/data/media/111/animated-arrow-image-0149.gif"
+              alt="animated-arrow-image-0149" />
+            <button [disabled]='!canRedirectToDashBoard' class="buttonBefore" (click)="redirectToDashBoard()"
+              mat-raised-button color="primary">Dashboard</button>
+            <!-- <a [disabled]='!canRedirectToDashBoard' class="buttonBefore" (click)="redirectToDashBoard()"><img src="../../assets/questionnaire/dashboard.png" alt="Dashboard"></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="mainSecond" *ngIf="isStop=='start' && status!=true" fxLayout="column" fxLayoutAlign='center center'>
+        <mat-spinner></mat-spinner>
+      </div>
+    </div>
+  </div>
+</div>

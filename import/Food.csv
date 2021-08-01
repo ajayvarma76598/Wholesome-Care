@@ -1,0 +1,65 @@
+Id:ID,name,quantity,unit,calorie,fats,carbs,protein,imageUrl:String
+401,LukeWarm Water,2,Glass,0,0,0,0,https://2.bp.blogspot.com/-a7366QNzidY/VyYahB3qEJI/AAAAAAAAAG0/pJqMZWSac6sayE62A9pecaB4INnWVwKFACKgB/s400/warm%2Bwater.jpg
+402,black coffee,1,Cup,2.1,0.1,0,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvDQqU2OzIW01RKHO3Kbt42FulK8dhVjSWAQ&usqp=CAU
+405,Multi-grain Bread,4,Slices,32,1.1,11,3.5,https://www.jessicagavin.com/wp-content/uploads/2020/04/whole-wheat-bread-21.jpg
+406,Fresh fruits,3,Servings,97,0.5,24,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlGLkbfwCKiCdkaAJ8GlHq9XEJzzImWrXd1j6FY5J3km8QSGLtO6jADgZp6UTm3NZ-GQ&usqp=CAU
+407,dry fruits,4,Piece,55,0.5,58,2.2,https://c4.wallpaperflare.com/wallpaper/423/298/446/dried-fruit-kiwi-apricots-figs-wallpaper-preview.jpg
+408,green tea,1,Cup,2.5,0,0,0.5,https://wallpaperaccess.com/full/2318048.jpg
+409,Salad,2,Servings,6.7,0.1,1.4,0.4,https://freedesignfile.com/upload/2017/01/vegetable-salad-HD-picture.jpg
+410,Multigrain Chapati,2,Medium,120,3.7,18,3.1,https://cdn.cdnparenting.com/articles/2020/02/27164118/Multigrain-Roti-Recipe.jpg
+411,Mix Daal,1,Bowl,222,4.2,34,14,https://s1.dmcdn.net/v/FKRDs1Vn_-Pb4DlH8/x1080
+415,Mix-Veg Soup,1,Bowl,159,3.8,26,5.8,https://media.istockphoto.com/photos/vegetable-soup-picture-id1092632852?k=6&m=1092632852&s=612x612&w=0&h=2zUWFSHXsiFbQZZ8R6emv5oQH8sz7dljf8KP7Xuu0vs=
+416,Palak Paneer Pulao,1,Servings,366,30,10,15,https://vegehomecooking.com/wp-content/uploads/2019/07/Palak-Paneer-Pulao4.jpg
+417,chicken curry,1,Servings,307.2,2.9,47.5,23.8,https://www.eazypeazymealz.com/wp-content/uploads/2017/08/Mixed-Vegetable-Chicken-Curry_2.jpg
+419,Turmeric milk,1,Servings,241.7,0.1,10,0.9,https://media.istockphoto.com/photos/golden-turmeric-milk-picture-id1254503729?k=6&m=1254503729&s=612x612&w=0&h=onZFmhlMEoeAttVoTmXpLNxkCOjdKANoOwptPjlh59o=
+420,LukeWarm Water,2,Glass,0,0,0,0,https://2.bp.blogspot.com/-a7366QNzidY/VyYahB3qEJI/AAAAAAAAAG0/pJqMZWSac6sayE62A9pecaB4INnWVwKFACKgB/s400/warm%2Bwater.jpg
+422,Juice,1,Glass,16,0,3.9,0,https://wallpapercave.com/wp/wp1907099.jpg
+426,Multi-grain Bread,2,Slices,61,1.1,11,3.5,https://www.jessicagavin.com/wp-content/uploads/2020/04/whole-wheat-bread-21.jpg
+427,Fresh fruits,4,Servings,97,0.5,24,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlGLkbfwCKiCdkaAJ8GlHq9XEJzzImWrXd1j6FY5J3km8QSGLtO6jADgZp6UTm3NZ-GQ&usqp=CAU
+428,eggs,2,Piece,72,4.8,0.4,6.3,https://media.istockphoto.com/photos/hardboiled-egg-picture-id961697160?k=6&m=961697160&s=612x612&w=0&h=-TW6WTFSDz4s6XBPovEBkxIHO4Io9NWKe5yJzbXYt4g=
+429,dry fruits,10,Piece,22,0.5,58,2.2,https://c4.wallpaperflare.com/wallpaper/423/298/446/dried-fruit-kiwi-apricots-figs-wallpaper-preview.jpg
+430,green tea,1,Cup,2.5,0,0,0.5,https://wallpaperaccess.com/full/2318048.jpg
+431,flex seeds,1,Tablespoon,55,4.3,3,1.9,https://4.imimg.com/data4/ST/EL/MY-23139028/flaxseed-500x500.jpg
+432,Curd,1,Bowl,69,3.7,5.3,3.9,https://4.imimg.com/data4/VA/KL/ANDROID-16361206/product-250x250.jpeg
+433,Salad,3,Servings,6.7,0.1,1.4,0.4,https://freedesignfile.com/upload/2017/01/vegetable-salad-HD-picture.jpg
+437,mix-veg curry,1,Bowl,150,5.4,23,4.7,https://thumbs.dreamstime.com/b/indian-mix-veg-mixed-vegetable-recipe-served-bowl-chapati-greavy-restaurant-style-192339585.jpg
+438,brown rice,1,Bowl,218,1.6,46,4.6,https://media.istockphoto.com/photos/brown-rice-picture-id173589620?k=6&m=173589620&s=612x612&w=0&h=Ka9cEEXNLmVakJ8o2Kd93kXz5TeIIEZzZuNBd8BjfUg=
+440,Coconut Water,1,Glass,46,0.5,8.9,1.7,https://assets.vogue.in/photos/5ce416bf9cc0c0a902f9b9b1/master/pass/Coconut-Water.jpg
+441,Sprouts,1,Bowl,7.6,0.2,0.7,1.3,https://media.healthyfood.com/wp-content/uploads/2017/03/Sprout-your-own-seeds-500x333.jpg
+442,Mix-Veg Soup,1,Bowl,159,3.8,26,5.8,https://media.istockphoto.com/photos/vegetable-soup-picture-id1092632852?k=6&m=1092632852&s=612x612&w=0&h=2zUWFSHXsiFbQZZ8R6emv5oQH8sz7dljf8KP7Xuu0vs=
+443,Palak-Paneer Pulao,1,Servings,366,30,10,15,https://vegehomecooking.com/wp-content/uploads/2019/07/Palak-Paneer-Pulao4.jpg
+444,chicken curry,1,Servings,307.2,2.9,47.5,23.8,https://www.eazypeazymealz.com/wp-content/uploads/2017/08/Mixed-Vegetable-Chicken-Curry_2.jpg
+448,LukeWarm Water,2,Glass,0,0,0,0,https://2.bp.blogspot.com/-a7366QNzidY/VyYahB3qEJI/AAAAAAAAAG0/pJqMZWSac6sayE62A9pecaB4INnWVwKFACKgB/s400/warm%2Bwater.jpg
+449,Cumin water,1,Cup,7.9,0.5,0.9,0.4,https://ak.picdn.net/shutterstock/videos/1007904601/thumb/5.jpg
+453,black coffee,1,Cup,2.1,0.1,0,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvDQqU2OzIW01RKHO3Kbt42FulK8dhVjSWAQ&usqp=CAU
+456,Idli Sambhar,1,Plate,304,2,61,12,https://vaya.in/recipes/wp-content/uploads/2018/02/Idli-and-Sambar-1.jpg
+460,Fresh fruits,2,Servings,97,0.5,24,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlGLkbfwCKiCdkaAJ8GlHq9XEJzzImWrXd1j6FY5J3km8QSGLtO6jADgZp6UTm3NZ-GQ&usqp=CAU
+464,flex seeds,1,Tablespoon,55,4.3,3,1.9,https://4.imimg.com/data4/ST/EL/MY-23139028/flaxseed-500x500.jpg
+465,Curd,1,Bowl,69,3.7,5.3,3.9,https://4.imimg.com/data4/VA/KL/ANDROID-16361206/product-250x250.jpeg
+466,Salad,4,Servings,6.7,0.1,1.4,0.4,https://freedesignfile.com/upload/2017/01/vegetable-salad-HD-picture.jpg
+469,Tofu,1,Bowl,380,24,5.5,45.5,https://img.jakpost.net/c/2020/03/24/2020_03_24_90454_1585029174._large.jpg
+470,mix-veg curry,1,Bowl,150,5.4,23,4.7,https://thumbs.dreamstime.com/b/indian-mix-veg-mixed-vegetable-recipe-served-bowl-chapati-greavy-restaurant-style-192339585.jpg
+471,brown rice,1,Bowl,218,1.6,46,4.6,https://media.istockphoto.com/photos/brown-rice-picture-id173589620?k=6&m=173589620&s=612x612&w=0&h=Ka9cEEXNLmVakJ8o2Kd93kXz5TeIIEZzZuNBd8BjfUg=
+474,Soya chunks,1,Bowl,332,0,29,54,https://thumbs.dreamstime.com/b/soya-chunks-raw-soy-meat-vegans-isolated-colourful-background-bowl-heap-form-187214016.jpg
+475,Coconut Water,1,Glass,46,0.5,8.9,1.7,https://assets.vogue.in/photos/5ce416bf9cc0c0a902f9b9b1/master/pass/Coconut-Water.jpg
+477,Mix Veg Soup,1,Bowl,159,3.8,26,5.8,https://media.istockphoto.com/photos/vegetable-soup-picture-id1092632852?k=6&m=1092632852&s=612x612&w=0&h=2zUWFSHXsiFbQZZ8R6emv5oQH8sz7dljf8KP7Xuu0vs=
+480,Mix-Veg Khichdi ,1,Servings,360,1.6,25,10,https://cdn.cdnparenting.com/articles/2019/02/19114344/Mashed-Mix-Vegetable-Khichdi-Recipe-1136761802-1024x700.jpg
+481,Low-Fat ButterChicken,1,Bowl,113.8,8.7,20.5,23.3,https://static.toiimg.com/thumb/53205522.cms?imgsize=302803&width=800&height=800
+484,LukeWarm Water,2,Glass,0,0,0,0,https://2.bp.blogspot.com/-a7366QNzidY/VyYahB3qEJI/AAAAAAAAAG0/pJqMZWSac6sayE62A9pecaB4INnWVwKFACKgB/s400/warm%2Bwater.jpg
+487,Cinamon Water,1,Glass,6,0,2.1,0.1,http://www.mediumspot.com/wp-content/uploads/2019/01/Cinnamon-Water-is-More-Beneficial-for-the-Body.png
+493,protien drink,1,Glass,171,8.5,2.5,19,https://thebigmansworld.com/wp-content/uploads/2021/01/almond-milk-smoothie2.jpg
+496,Oats with milk,1,Bowl,130,2.5,15,4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKuKhh85enIh4fsGV20TQqwjCLS_LNXLC9E97tteCYRxox2nIiRp_nqMCtVjxH_BT0F8c&usqp=CAU
+498,Fresh fruits,3,Servings,97,0.5,24,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlGLkbfwCKiCdkaAJ8GlHq9XEJzzImWrXd1j6FY5J3km8QSGLtO6jADgZp6UTm3NZ-GQ&usqp=CAU
+500,dry fruits,10,Piece,22,0.5,58,2.2,https://c4.wallpaperflare.com/wallpaper/423/298/446/dried-fruit-kiwi-apricots-figs-wallpaper-preview.jpg
+501,green tea,1,Cup,2.5,0,0,0.5,https://wallpaperaccess.com/full/2318048.jpg
+502,flex seeds,1,Tablespoon,55,4.3,3,1.9,https://4.imimg.com/data4/ST/EL/MY-23139028/flaxseed-500x500.jpg
+503,Curd,1,Bowl,69,3.7,5.3,3.9,https://4.imimg.com/data4/VA/KL/ANDROID-16361206/product-250x250.jpeg
+504,Salad,2,Servings,6.7,0.1,1.4,0.4,https://freedesignfile.com/upload/2017/01/vegetable-salad-HD-picture.jpg
+509,brown rice,1,Bowl,218,1.6,46,4.6,https://media.istockphoto.com/photos/brown-rice-picture-id173589620?k=6&m=173589620&s=612x612&w=0&h=Ka9cEEXNLmVakJ8o2Kd93kXz5TeIIEZzZuNBd8BjfUg=
+510,Low-Fat DahiChicken,1,Bowl,228,4.1,23,26,https://www.boldsky.com/img/2013/09/30-dahichicken.jpg
+512,Soya chunks,1,Bowl,332,0,29,54,https://thumbs.dreamstime.com/b/soya-chunks-raw-soy-meat-vegans-isolated-colourful-background-bowl-heap-form-187214016.jpg
+513,Coconut Water,1,Glass,46,0.5,8.9,1.7,https://assets.vogue.in/photos/5ce416bf9cc0c0a902f9b9b1/master/pass/Coconut-Water.jpg
+515,Mix Veg Soup,1,Bowl,159,3.8,26,5.8,https://media.istockphoto.com/photos/vegetable-soup-picture-id1092632852?k=6&m=1092632852&s=612x612&w=0&h=2zUWFSHXsiFbQZZ8R6emv5oQH8sz7dljf8KP7Xuu0vs=
+520,Quinoa,1,Bowl,222,3.6,40,8.2,https://lh3.googleusercontent.com/proxy/DeH8BlM257xeI791js_ED4fnbohKDyvsUxymLtNyfgIO1CFUFaIvOJ7rLs64fRSYm-5euwM2We5aYZXgGbienScCzbb9vd8OHwQHn_llkQapE3VyJbbzDHG6u05Yk5zLExza0vUVNXZxAkY1PJZMh4H6aYlZOFGs
+521,Kidney Beans,1,Bowl,225,0.9,40,15,https://media.istockphoto.com/photos/kidney-beans-in-a-bowl-picture-id646869882?k=6&m=646869882&s=612x612&w=0&h=zXj-J9WaUSAFOe9bAJp5hqVAZMBtDtJ_rJFuqdZsky4=
+522,Chopped Mushrooms,1,Servings,3.4,0.1,0.6,0.3,https://c.stocksy.com/a/LvO000/z9/95811.jpg

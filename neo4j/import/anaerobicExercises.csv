@@ -1,0 +1,4 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+59,Weight training,50,child,part of,Run for 6 KM,,,,,1,
+60,Isometric exercise,50,child,part of,Run for 6 KM,,,,,1,
+61,Sprinting,50,child,part of,Run for 6 KM,,,,,1,

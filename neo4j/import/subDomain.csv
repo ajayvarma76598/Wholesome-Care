@@ -1,0 +1,5 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,effectOnWeight,benefit
+42,Mental Wellness,41,super parent,super parent,Mental wellness,,,,,,,
+7,physical wellness,41,super parent,super parent,physical wellness,,,,,,,
+43,Social wellness,41,super parent,super parent,physical wellness,,,,,,,
+44,Spiritual wellness,41,super parent,super parent,physical wellness,,,,,,,

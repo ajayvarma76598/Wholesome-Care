@@ -1,0 +1,6 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+130,salmon,36,child,part of,This restriction does not apply to pescetarians,,,,,,
+131,prawns,36,child,part of,This restriction does not apply to pescetarians,,,,,,
+132,squid,36,child,part of,This restriction does not apply to pescetarians,,,,,,
+133,scallops,36,child,part of,This restriction does not apply to pescetarians,,,,,,
+134,sparts,36,child,part of,This restriction does not apply to pescetarians,,,,,,

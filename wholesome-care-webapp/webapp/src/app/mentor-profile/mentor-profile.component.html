@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="profile" fxLayout="row" fxLayoutAlign="start center">
+        <div class="image-box" >
+            <img src="{{mentor.imagePath}}"  alt="">
+        </div>
+        <div class="detail" >
+            <h2 class="name">{{mentor.name}}</h2>
+            <h3 class="expertize">{{mentor.expertize}}</h3>
+            <span class="rating" *ngFor="let ratingId of ratingArr;index as i">
+                <mat-icon>{{showIcon(i)}}</mat-icon>
+            </span>
+            <button class="btn" (click)="editProfile()" *ngIf = "isMentor">Edit Profile</button>
+            <button class="btn" (click)="editDashboard()" *ngIf = "isMentor">Dashboard</button>
+            <button class="btn" (click)="editDashboard()" *ngIf = "!isMentor">user Profile</button>
+        </div>
+    </div>
+    <div class="discription">
+        <div class="about data">
+            <h3>About:</h3>
+            <p>{{mentor.about}}</p>
+        </div>
+        <div class="qualification data">
+            <h3>Qualification:</h3>
+            <div class="education">
+                <h4>Education:</h4>
+                <p>{{mentor.education}}</p>
+            </div>
+            <div class="certification">
+                <h4>Certification:</h4>
+                <p>{{mentor.certification}}</p>
+            </div>
+            <div class="training">
+                <h4>Training:</h4>
+                <p>{{mentor.training}}</p>
+            </div>
+        </div>
+        <div class="language data">
+            <h3>Language:</h3>
+            <p>{{mentor.language}}</p>
+        </div>
+        <div class="specialities data">
+            <h3>Specialities:</h3>
+            <p>{{mentor.specialities}}</p>
+        </div>
+    </div>
+</div>

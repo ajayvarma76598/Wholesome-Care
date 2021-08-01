@@ -1,0 +1,51 @@
+mat-card h1{
+  font-family: var(--heading-font-family);
+  font-size: 1.7em;
+  font-weight: 600;
+  color: var(--secondary-color);
+  opacity: .8;
+
+}
+.calorie-card{
+  box-shadow: none;
+  width: 90%;
+  max-width: 500px;
+  min-width: 300px;
+  height: fit-content;
+}
+mat-card .head{
+  font-size: 2em;
+  opacity: 1;
+}
+.foodCard{
+  margin: 0 .7em;
+  margin-bottom: 2em;
+  height: 450px;
+  overflow-y: auto;
+  /* height: fit-content; */
+  width: 90vw ;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .8);
+}
+::ng-deep  .mat-elevation-z4{
+  box-shadow: none;
+}
+.foodCard h1{
+  font-family: var(--heading-font-family);
+  opacity: .7;
+  font-weight: 600;
+  font-size: 2em;
+}
+mat-tab-group{
+  height: 100%;
+  width: 90%;
+  max-width: 1200px;
+}
+.app-food-card{
+  margin: 3em 0;
+}
+/* app-food{
+  margin-bottom: 3rem;
+  width: 90vw;
+  max-width: 1200px;
+} */
+

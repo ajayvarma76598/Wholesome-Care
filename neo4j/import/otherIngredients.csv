@@ -1,0 +1,7 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+110,Temeh,33,child,part of,"Tempeh, tofu, seitan, natto, nutritional yeast, spirulina, eggs, dairy products",,,,,,
+111,tofu,33,child,part of,"Tempeh, tofu, seitan, natto, nutritional yeast, spirulina, eggs, dairy products",,,,,,
+112,seitan,33,child,part of,"Tempeh, tofu, seitan, natto, nutritional yeast, spirulina, eggs, dairy products",,,,,,
+113,natto,33,child,part of,"Tempeh, tofu, seitan, natto, nutritional yeast, spirulina, eggs, dairy products",,,,,,
+114,nutritional yeast,33,child,part of,"Tempeh, tofu, seitan, natto, nutritional yeast, spirulina, eggs, dairy products",,,,,,
+115,spirulina,33,child,part of,"Tempeh, tofu, seitan, natto, nutritional yeast, spirulina, eggs, dairy products",,,,,,

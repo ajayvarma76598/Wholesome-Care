@@ -1,0 +1,92 @@
+Id:ID,name,activityType,duration_min,calorieBurnt,description,videoUrl,imageUrl,audioUrl,quotationImageUrl:String
+281,Running,Physical Activity,5,10,ok,ok,ok,ok,ok
+282,Brisk Walking,Physical Activity,10,3,ok,ok,ok,ok,ok
+283,Brisk Walking,Physical Activity,10,3,ok,ok,ok,ok,ok
+284,Brisk Walking,Physical Activity,15,3,ok,ok,ok,ok,ok
+285,Brisk Walking,Physical Activity,15,3,ok,ok,ok,ok,ok
+286,Yoga,Physical Activity,5,3,ok,ok,ok,ok,ok
+287,Sit-ups,Physical Activity,5,8,ok,ok,ok,ok,ok
+288,Mountain Climbers,Physical Activity,5,8,ok,ok,ok,ok,ok
+289,Mountain Climbers,Physical Activity,5,8,ok,ok,ok,ok,ok
+290,Sun-Salutation,Physical Activity,5,12,ok,ok,ok,ok,ok
+291,Sun-Salutation,Physical Activity,10,12,ok,ok,ok,ok,ok
+292,Sun-Salutation,Physical Activity,15,12,ok,ok,ok,ok,ok
+293,Sun-Salutation,Physical Activity,15,12,ok,ok,ok,ok,ok
+294,Walking,Physical Activity,5,3,ok,ok,ok,ok,ok
+295,Rope-jumping,Physical Activity,5,8,ok,ok,ok,ok,ok
+296,Rope-jumping,Physical Activity,5,8,ok,ok,ok,ok,ok
+297,Rope-jumping,Physical Activity,5,8,ok,ok,ok,ok,ok
+298,Rope-jumping,Physical Activity,5,8,ok,ok,ok,ok,ok
+299,spot jogging,Physical Activity,10,7,ok,ok,ok,ok,ok
+300,spot jogging,Physical Activity,15,7,ok,ok,ok,ok,ok
+301,spot jogging,Physical Activity,15,7,ok,ok,ok,ok,ok
+302,spot jogging,Physical Activity,15,7,ok,ok,ok,ok,ok
+303,Cycling,Physical Activity,5,4,ok,ok,ok,ok,ok
+304,High knee,Physical Activity,5,5,ok,ok,ok,ok,ok
+305,High knee,Physical Activity,10,5,ok,ok,ok,ok,ok
+306,High knee,Physical Activity,10,5,ok,ok,ok,ok,ok
+307,High knee,Physical Activity,10,5,ok,ok,ok,ok,ok
+308,Butt kickers,Physical Activity,5,5,ok,ok,ok,ok,ok
+309,Butt kickers,Physical Activity,5,5,ok,ok,ok,ok,ok
+310,Butt kickers,Physical Activity,5,5,ok,ok,ok,ok,ok
+311,Butt kickers,Physical Activity,5,5,ok,ok,ok,ok,ok
+312,Zumba,Physical Activity,15,8,ok,ok,ok,ok,ok
+313,Zumba,Physical Activity,20,8,ok,ok,ok,ok,ok
+314,Streching,Physical Activity,5,3,ok,ok,ok,ok,ok
+315,Streching,Physical Activity,5,3,ok,ok,ok,ok,ok
+316,Streching,Physical Activity,5,3,ok,ok,ok,ok,ok
+317,Streching,Physical Activity,5,3,ok,ok,ok,ok,ok
+318,pillates,Physical Activity,5,7,ok,ok,ok,ok,ok
+319,pillates,Physical Activity,5,7,ok,ok,ok,ok,ok
+320,pillates,Physical Activity,10,7,ok,ok,ok,ok,ok
+321,pillates,Physical Activity,10,7,ok,ok,ok,ok,ok
+322,Push-ups,Physical Activity,10,7,ok,ok,ok,ok,ok
+323,Push-ups,Physical Activity,15,7,ok,ok,ok,ok,ok
+324,Push-ups,Physical Activity,10,7,ok,ok,ok,ok,ok
+325,Pull-ups,Physical Activity,5,9,ok,ok,ok,ok,ok
+326,Burpees,Physical Activity,5,10,ok,ok,ok,ok,ok
+327,Twister,Physical Activity,10,3,ok,ok,ok,ok,ok
+328,Twister,Physical Activity,10,3,ok,ok,ok,ok,ok
+329,Twister,Physical Activity,10,3,ok,ok,ok,ok,ok
+330,Squat,Physical Activity,5,6,ok,ok,ok,ok,ok
+331,Squat,Physical Activity,5,6,ok,ok,ok,ok,ok
+332,Squat,Physical Activity,10,6,ok,ok,ok,ok,ok
+371,Squat,Physical Activity,10,6,ok,ok,ok,ok,ok
+333,Monkeypose Boatpose,Physical Activity,5,6,ok,ok,ok,ok,ok
+334,Monkeypose Boatpose,Physical Activity,10,6,ok,ok,ok,ok,ok
+335,Monkeypose Boatpose,Physical Activity,10,6,ok,ok,ok,ok,ok
+336,Diamond push-ups,Physical Activity,6,6,ok,ok,ok,ok,ok
+337,Knee Touch,Physical Activity,4,6,ok,ok,ok,ok,ok
+338,Listen soothing music,Mental Activity,10,0,ok,ok,ok,ok,ok
+339,Motivational audio,Mental Activity,10,0,ok,ok,ok,ok,ok
+340,Morning Affirmation,Mental Activity,10,0,ok,ok,ok,ok,ok
+341,Morning Affirmation,Mental Activity,10,0,ok,ok,ok,ok,ok
+342,Morning Affirmation,Mental Activity,10,0,ok,ok,ok,ok,ok
+343,Morning Affirmation,Mental Activity,10,0,ok,ok,ok,ok,ok
+344,Write today’s routine,Mental Activity,10,0,ok,ok,ok,ok,ok
+345,Write today’s routine,Mental Activity,10,0,ok,ok,ok,ok,ok
+346,Listen Chanting audio,Mental Activity,10,0,ok,ok,ok,ok,ok
+347,Listen Chanting audio,Mental Activity,10,0,ok,ok,ok,ok,ok
+348,Listen Chanting audio,Mental Activity,10,0,ok,ok,ok,ok,ok
+349,Listen Chanting audio,Mental Activity,10,0,ok,ok,ok,ok,ok
+350,chanting yoga,Mental Activity,10,0,ok,ok,ok,ok,ok
+351,chanting yoga,Mental Activity,10,0,ok,ok,ok,ok,ok
+352,chanting yoga,Mental Activity,15,0,ok,ok,ok,ok,ok
+353,breathing yoga,Mental Activity,10,0,ok,ok,ok,ok,ok
+354,breathing yoga,Mental Activity,15,0,ok,ok,ok,ok,ok
+355,breathing yoga,Mental Activity,15,0,ok,ok,ok,ok,ok
+356,breathing yoga,Mental Activity,20,0,ok,ok,ok,ok,ok
+357,Watch motivatonal video,Mental Activity,10,0,ok,ok,ok,ok,ok
+358,Watch motivatonal video,Mental Activity,15,0,ok,ok,ok,ok,ok
+359,Watch motivatonal video,Mental Activity,15,0,ok,ok,ok,ok,ok
+360,Watch motivatonal video,Mental Activity,20,0,ok,ok,ok,ok,ok
+361,Spiritual Meditation,Mental Activity,10,0,ok,ok,ok,ok,ok
+362,Follow your Hobby,Mental Activity,20,0,ok,ok,ok,ok,ok
+363,Follow your Hobby,Mental Activity,20,0,ok,ok,ok,ok,ok
+364,Follow your Hobby,Mental Activity,20,0,ok,ok,ok,ok,ok
+365,Follow your Hobby,Mental Activity,25,0,ok,ok,ok,ok,ok
+366,Reading Spiritual Books,Mental Activity,15,0,ok,ok,ok,ok,ok
+367,Reading Spiritual Books,Mental Activity,20,0,ok,ok,ok,ok,ok
+368,Focused Meditation,Mental Activity,10,0,ok,ok,ok,ok,ok
+369,Mindfulness Meditation,Mental Activity,15,0,ok,ok,ok,ok,ok
+370,Spiritual Meditation,Mental Activity,30,0,ok,ok,ok,ok,ok

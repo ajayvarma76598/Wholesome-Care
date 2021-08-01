@@ -1,0 +1,5 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+106,Lentils,29,child,part of,"Lentils, beans, peas, chickpeas.",,,,,,
+107,beans,29,child,part of,"Lentils, beans, peas, chickpeas.",,,,,,
+108,peas,29,child,part of,"Lentils, beans, peas, chickpeas.",,,,,,
+109,chickpeas,29,child,part of,"Lentils, beans, peas, chickpeas.",,,,,,

@@ -1,0 +1,6 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+101,Quinoa,28,child,part of,"Quinoa, barley, buckwheat, rice, oats",,,,,,
+102,barley,28,child,part of,"Quinoa, barley, buckwheat, rice, oats",,,,,,
+103,buckwheat,28,child,part of,"Quinoa, barley, buckwheat, rice, oats",,,,,,
+104,rice,28,child,part of,"Quinoa, barley, buckwheat, rice, oats",,,,,,
+105,oats,28,child,part of,"Quinoa, barley, buckwheat, rice, oats",,,,,,

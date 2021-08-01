@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name":"Krishna chaitanya",
+        "image":"../../assets/mentorData/mentorimage/yogaInstructor/krish-yoga-teacher-275x300.jpg",
+        "discription":"Krishna Chaitanya is a simple Yoga Teacher who thinks of himself as an eternal student in awe of the ocean of yoga wisdom. His special expertise is in the field of traditional Hatha Yoga, Meditation, Philosophy and Psychology of Yoga-Vedanta."
+    },
+    {
+        "id":2,
+        "name":"Swami Prabodh Chaitanya",
+        "image":"../../assets/mentorData/mentorimage/yogaInstructor/swamiji-227x300.jpg",
+        "discription":"Swami Prabodh Chaitanya is a Yoga-Vedanta Scholar who also holds a Masters Degree in English literature, besides his traditional studies in Sanskrit under his teacher H.H Swami Bodhananda Saraswathi of the Chinmaya Mission."
+    },
+    {
+        "id":3,
+        "name":"Ganga Sanjay",
+        "image":"../../assets/mentorData/mentorimage/yogaInstructor/c02ff97bd99c65a9d91f42b39286b152-2.png",
+        "discription":"Sanjay began his yoga practice during childhood, with his father K.K. Gangadharan, a well know yoga teachers in Kerala.Sanjay teaches the morning Yoga Asana classes, Pranayama, Meditation, Yoga Nidra sessions to both Yoga Teacher Trainings and Ayurveda & Yoga Retreats in our ashram."
+    },
+    {
+        "id":4,
+        "name":"Ruchi Phool",
+        "image":"../../assets/mentorData/mentorimage/yogaInstructor/Ruchi-230x300.jpg",
+        "discription":"Ruchi is a Yoga Therapist, Teacher, Wellness Coach and has conducted yoga therapy, workshops, retreats and events across India. She holds a Diploma in Yoga Vidya from Bharatiya Vidya Bhawan, 200 Hours Yoga Teacher Training from Medical Yoga and S-VYASA, Heartfulness Yoga Teacher Certification,"
+    },
+    {
+        "id":5,
+        "name":"Shobha Bontrapal S",
+        "image":"../../assets/mentorData/mentorimage/yogaInstructor/Shobha-230x300.jpg",
+        "discription":"Shobha Bontrapal is a 500 RYT certified Yoga teacher as well as Marma and Ayurveda Therapist with advanced training and extensive experienced in Dubai. She has been in service for many years to help people realize the potential of yoga for maintaining a sound body and mind. "
+    }
+]

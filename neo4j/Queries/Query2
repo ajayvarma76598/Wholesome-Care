@@ -1,0 +1,40 @@
+LOAD CSV WITH HEADERS FROM "file:///physical_level.csv" AS csvLine
+CREATE (:physical_level {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description})
+
+LOAD CSV WITH HEADERS FROM "file:///mental_level.csv" AS csvLine
+CREATE (:mental_level {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description})
+
+LOAD CSV WITH HEADERS FROM "file:///diet_level.csv" AS csvLine
+CREATE (:diet_level {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description})
+
+MATCH (wellness_measure:wellness_measure) MATCH (physical_level:physical_level) WHERE wellness_measure.Id = physical_level.parentId MERGE (physical_level)-[:isA]->(wellness_measure)
+
+MATCH (wellness_measure:wellness_measure) MATCH (mental_level:mental_level) WHERE wellness_measure.Id = mental_level.parentId MERGE (mental_level)-[:isA]->(wellness_measure)
+
+MATCH (wellness_measure:wellness_measure) MATCH (diet_level:diet_level) WHERE wellness_measure.Id = diet_level.parentId MERGE (diet_level)-[:isA]->(wellness_measure)
+
+LOAD CSV WITH HEADERS FROM "file:///physical_activity.csv" AS csvLine
+CREATE (:physical_activity {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description})
+
+LOAD CSV WITH HEADERS FROM "file:///mental_activity.csv" AS csvLine
+CREATE (:mental_activity {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description})
+
+LOAD CSV WITH HEADERS FROM "file:///foods.csv" AS csvLine
+CREATE (:foods {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description})
+
+LOAD CSV WITH HEADERS FROM "file:///itemsList.csv" AS csvLine
+CREATE (:items {Id:csvLine.Id,name:csvLine.name,parentId:csvLine.parentId,type:csvLine.Type, parentRelation:csvLine.parentRelation, description:csvLine.description})
+
+MATCH (physical_level:physical_level) MATCH (physical_activity:physical_activity) WHERE physical_level.Id = physical_activity.parentId MERGE (physical_activity)-[:contains_activity]->(physical_level)
+
+MATCH (mental_level:mental_level) MATCH (mental_activity:mental_activity) WHERE mental_level.Id = mental_activity.parentId MERGE (mental_activity)-[:contains_activity]->(mental_level)
+
+MATCH (a:physical_level) MATCH(b:User) WHERE a.Id="144" AND b.physical_level_Id=144 CREATE (b)-[r:physical_measure]->(a) RETURN type(r)
+
+MATCH (a:mental_level) MATCH(b:User) WHERE a.Id="149" AND b.mental_level_Id=149 CREATE (b)-[r:mental_measure]->(a) RETURN type(r)
+
+MATCH (diet_level:diet_level) MATCH (foods:foods) WHERE diet_level.Id = foods.parentId MERGE (diet_level)-[:food_type]->(foods)
+
+MATCH (foods:foods) MATCH (items:items) WHERE foods.Id = items.parentId MERGE (foods)-[:contains_item]->(items)
+
+MATCH p=()-[:isA]->() MATCH q=()-[:includes]->() MATCH r=()-[:physical_measure]->() MATCH s=()-[:mental_measure]->() MATCH t=()-[:follows]->() RETURN p,q,r,s,t

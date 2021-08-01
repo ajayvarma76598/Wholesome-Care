@@ -1,0 +1,95 @@
+h3{
+    font-family: var(--heading-font-family);
+    font-size: 1.5em;
+    font-weight: 500;
+    color:rgba(0, 0, 0, 0.7);
+}
+
+.imgBox{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 2rem;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 70%);
+  border-radius: 50%;
+}
+.imgBox img {
+  width: 100%;
+  height: 100%;
+}
+.detail .name{
+  font-family: var(--heading-font-family);
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--primary-color);
+  opacity: .8;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+h3{
+  font-family: var(--heading-font-family);
+  font-size: 1.5em;
+  font-weight: 500;
+  color:rgba(0, 0, 0, 0.7);
+}
+mat-icon{
+  color: goldenrod;
+}
+.profile{
+  width: 90%;
+  max-width: 700px;
+  min-width: 250px;
+}
+
+.button{
+    font-family: var(--heading-font-family);
+    padding: .5em 2em;
+    margin: 1em;
+    min-width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+.appointmentSlots .button{
+    background-color: var(--secondary-color);
+
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgba(255,255,255,.7);
+}
+.databox{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin: 5rem 3rem;
+    width: fit-content;
+}
+
+.bookedAppointmnets{
+    width: 85%;
+}
+.bookedAppointmnets button{
+
+    width: 100%;
+}
+.dateBox{
+    margin-right: 3em;
+}
+.dateBox h3{
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.appointmentTime{
+    margin: 0 3em;
+}
+.appointmentTime h3{
+    font-size: 2.5em;
+}
+.customerName{
+    margin-left: 5em;
+}
+
+
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent{
+    background-color: var(--primary-color);
+    font-weight: 700;
+    color: rgba(255,255,255,.7);
+}

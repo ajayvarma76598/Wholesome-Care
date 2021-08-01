@@ -1,0 +1,9 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+12,pranayam yoga,10,child,part of,about pranayam yoga,,,,,2,
+13,Surya-namaskar,10,child,part of,about surya-namaskar yoga,,,,,2,
+14,niyama,10,child,part of,about niyama yoga,,,,,2,
+15,asana,10,child,part of,about asana yoga,,,,,2,
+16,pratyahara,10,child,part of,about pratyahara yoga,,,,,2,
+17,dharana,10,child,part of,about dharana yoga,,,,,2,
+18,dhyana,10,child,part of,about dhayana yoga,,,,,2,
+19,samadhi,10,child,part of,about samadhi yoga,,,,,2,

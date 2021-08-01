@@ -1,0 +1,7 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+20,Aerobic,2,child,part of,All the gym and general exercises,,,,,,
+50,Anaerobic,2,child,part of,All the gym and general exercises,,,,,,
+51,Flexibility,2,child,part of,All the gym and general exercises,,,,,,
+52,Muscle-Strengthening,2,child,part of,All the gym and general exercises,,,,,,
+10,yoga,2,child,part of,"Surya-namaskar, Hatha yoga, power yoga",,,,,1,
+11,dance,2,child,part of,zumba/classical,,,,,1,

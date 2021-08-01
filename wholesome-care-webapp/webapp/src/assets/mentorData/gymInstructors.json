@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name":"Satyajit Chaurasia",
+        "image":"../../assets/mentorData/mentorimage/gymInstructor/3_5f468e1c48d64.jpeg",
+        "discription":"Satyajit Chaurasia is the magician behin the ripped look Aamir Khan managed to achieve for the movie. He has also trained other A-listers like Hrithik Roshan and Saif Ali Khan. Satyajit is one of those trainers who will make sure you do the session and you do it well to get results."
+    },
+    {
+        "id":2,
+        "name":"Prashant Sawant",
+        "image":"../../assets/mentorData/mentorimage/gymInstructor/prashant.png",
+        "discription":"Prashant Sawant is one of the biggest names in the fitness industry. If you were wondering how Shah RUkh Khan got his chiseled look in the movie ‘Om Shanti Om’, Prashant is the answer. He used VIPR (Vitality, Performance and Reconditioning) to train Shah Rukh Khan"
+    },
+    {
+        "id":3,
+        "name":"Manish Advikar",
+        "image":"../../assets/mentorData/mentorimage/gymInstructor/manish.jpeg ",
+        "discription":"Salman Khan is one of the first actors to build body and flaunt it too. He is the original body builder of the industry and has managed to maintain the beefed up looks, thanks to his trainer Manish Advikar, who trained him for nearly six years. "
+    },
+    {
+        "id":4,
+        "name":"Yasmin Karachiwala",
+        "image":"../../assets/mentorData/mentorimage/gymInstructor/yasmin.jpeg",
+        "discription":"Yasmin Karachiwala is arguably the most famous fitness trainer among Bollywood actress. Having trained top celebrities like Deepika Padukone, Alia Bhatt and Katrina Kaif, Yasmin has proved herself as one of the best trainers around."
+    },
+    {
+        "id":5,
+        "name":"Samir Jaura",
+        "image":"../../assets/mentorData/mentorimage/gymInstructor/Coach-Samir-Jaura.jpg",
+        "discription":"Farhan Akhtar nailed his role in the movie Bhaag Milkha Bhaag with his toned look and is still collecting accolades for it. People drooled over the multitalented star’s fit body and the man behind such a huge body transformation is his trainer Samir Jaura."
+    }
+]

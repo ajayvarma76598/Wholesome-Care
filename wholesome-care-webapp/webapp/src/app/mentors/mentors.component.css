@@ -1,0 +1,20 @@
+.back p{
+    font-size: 1.2rem;
+}
+.flex-center{
+    flex-direction: row;
+    width: fit-content;
+}
+mat-tab-group{
+    padding-top:5rem ;
+}
+.expert-card{
+    width: 300px;
+    height: 380px;
+}
+.circleCut{
+    top: -60%;
+}
+.expert-card .front mat-card-title{
+    font-size: 2rem;
+}

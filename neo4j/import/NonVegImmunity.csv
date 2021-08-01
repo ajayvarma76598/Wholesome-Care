@@ -1,0 +1,3 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+38,Eggs,77,child,part of,This restriction applies to vegans and lacto-vegetarians,,,,,,
+39,Dairy products,77,child,part of,"This restriction on milk, yogurt and cheese applies to vegans and ovo-vegetarians",,,,,,

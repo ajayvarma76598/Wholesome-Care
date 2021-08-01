@@ -1,0 +1,4 @@
+Id,name,parentId,Type,ParentRelation,description,breakfast,lunch,dinner,miscellaneous,noOfTimes,benefit
+30,Nuts,73,child,part of,"Almonds, walnuts, cashews, chestnuts",,,,,,
+31,Seeds,73,child,part of,"Flaxseeds, chia and hemp seeds",,,,,,
+32,Healthy fats,73,child,part of,"Coconut oil, olive oil, avocados",,,,,,

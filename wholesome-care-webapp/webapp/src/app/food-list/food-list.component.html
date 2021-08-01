@@ -1,0 +1,44 @@
+<div class="foodMain"  fxLayout="row wrap" fxLayoutAlign="center center">
+  <mat-card  class="foodCard" fxLayout="column" fxLayoutAlign="start stretch">
+    <mat-tab-group>
+      <mat-tab label="Breakfast">
+        <div class="app-food-card" fxLayout="row wrap" fxLayoutAlign="center stretch">
+          <app-food *ngFor="let breakfast of dietPlan.breakfast" [food]="breakfast"></app-food>
+        </div>
+      </mat-tab>
+      <mat-tab label="Morning Snacks">
+        <div class="app-food-card" fxLayout="row wrap" fxLayoutAlign="center stretch">
+          <app-food *ngFor="let morningSnacks of dietPlan.morningSnacks" [food]="morningSnacks"></app-food>
+        </div>
+      </mat-tab>
+      <mat-tab label="Lunch">
+        <div class="app-food-card" fxLayout="row wrap" fxLayoutAlign="center stretch">
+          <app-food *ngFor="let lunch of dietPlan.lunch" [food]="lunch"></app-food>
+        </div>
+      </mat-tab>
+      <mat-tab label="Evening Snacks">
+        <div class="app-food-card" fxLayout="row wrap" fxLayoutAlign="center stretch">
+          <app-food *ngFor="let eveningSnacks of dietPlan.eveningSnacks" [food]="eveningSnacks"></app-food>
+        </div>
+      </mat-tab>
+      <mat-tab label="Dinner">
+        <div class="app-food-card" fxLayout="row wrap" fxLayoutAlign="center stretch">
+          <app-food *ngFor="let dinner of dietPlan.dinner" [food]="dinner"></app-food>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div >
+<div fxLayout="row" fxLayoutAlign="center center">
+<mat-card class="calorie-card" fxLayout="column" fxLayoutAlign="center center" >
+  <h1 class="head">Your whole day nutrition intake:</h1>
+  <google-chart #chart
+   [type]="type"
+   [data]="data"
+   [options]="options">
+</google-chart>
+</mat-card>
+</div>
+
+<!-- <h1>{{getTotalCal()}}</h1>
+<mat-progress-bar mode="determinate" value="valueCal*(100/getTotalCal())"></mat-progress-bar> -->

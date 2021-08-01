@@ -1,0 +1,240 @@
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image {
+
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-left: 4%;
+ margin-top:2%;
+}
+.float{
+  margin-left: 5%;
+  position: absolute;
+  top:10px;
+  right: 40px;
+
+}
+.cont{
+  width: 90%;
+  max-width: 900px;
+  min-width: 300px;;
+  height: fit-content;
+  box-shadow: 0 0 10px rgba(52, 31, 97, 0.5);
+
+}
+.profileCard{
+  padding: 2rem 0;
+}
+.activities{
+  margin: 6rem 0;
+  overflow-y: auto;
+  height: 500px;
+  padding-top: 2rem;
+}
+.booking{
+  margin-top: 3rem;
+  max-width: 300px;
+}
+
+.userDetail{
+  margin-top: 1.5rem;
+  width: 90%;
+  min-width: 400px;
+  max-width: 500px;
+  height: fit-content;
+  position: relative;
+}
+
+.follows{
+  margin: 1.5rem 0;
+  font-family: var(--body-font-family);
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+
+.dateBox{
+  margin-right: 3em;
+}
+.dateBox h3{
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.appointmentTime,.dateBox,.customerName{
+  margin: 0 1.5em;
+}
+
+.appointmentTime h2{
+  font-size: 2em;
+}
+.dateBox h2, .customerName h2{
+  font-size: 2.5em;
+  text-align: center;
+}
+.container{
+  background: rgba(0, 0, 0, .7) url('../../assets/questionnaire/whiteWoodenBackground.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  padding: 5rem;
+}
+.level .score{
+
+  font-weight: bold;
+  font-family: var(--heading-font-family);
+}
+.mentorButton{
+  /* width: 100%; */
+  width: 350px;
+  /* max-width: 300px; */
+  /* min-width: 220px; */
+  margin: 1rem 1em;
+  padding: 1rem;
+  box-shadow: none;
+  border-radius: 10px;
+
+}
+.appointments,
+.mentorsList{
+  margin: 3rem 0;
+  width: 90%;
+  max-width: 900px;
+  min-width: 366px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding-bottom: 2em;
+}
+.appointment{
+  margin-bottom: 2rem;
+  background-color: #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 700px;
+}
+.profileTitle{
+  text-align: center;
+  line-height: 1.3em;
+  font-family: var(--heading-font-family);
+  font-size: 3em;
+  font-weight: 600;
+  color:#ddd;
+  opacity: .7;
+  margin: 2rem 0;
+}
+::ng-deep h2{
+  font-family: var(--heading-font-family);
+  font-size: 2.5em;
+  font-weight: 600;
+  color:var(--primary-color);
+  opacity: .7;
+}
+.pastAct{
+  color: #333;
+  width: 80%;
+}
+.pastAct span{
+  color: var(--primary-color);
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+.pastActivity{
+  padding-top: 1em;
+  height: fit-content;
+}
+.activityData{
+height: 500px;
+width: 100%;
+
+overflow-y: auto;
+}
+.mat-card:not([class*=mat-elevation-z]){
+  box-shadow: 0 0 10px rgba(52, 31, 97, 0.5);
+
+}
+h3{
+  font-family: var(--heading-font-family);
+  font-size: 2em;
+  font-weight: 600;
+  color:var(--primary-color);
+  opacity: .8;
+}
+
+
+h4{
+  font-family: var(--heading-font-family);
+  font-size: 1.5em;
+  font-weight: 500;
+  color:rgba(0, 0, 0, 0.7);
+}
+.doneActivity{
+  font-family: var(--body-font-family);
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #222;
+  margin: 1em;
+
+}
+
+.tileFirst{
+  background: #ededed;
+}
+.mat-list-level{
+  width: 100%;
+  padding: 0 1em;
+}
+.belts{
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.level{
+  position: absolute;
+  top:53%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  color: var(--primary-color);
+}
+.levelMatched{
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 8);
+}
+
+.levels{
+  width: 90%;
+  max-width: 470px;
+  padding: 1em;
+  box-shadow: none;
+  text-align: center;
+}
+.mat-list-level span{
+  font-family: var(--heading-font-family);
+  font-size: 1.3em;
+  font-weight: 600;
+  opacity: .8;
+  margin-top: 1.2em ;
+  margin-bottom: .3em;
+}
+::ng-deep .dialogBoxPlan .mat-dialog-container{
+  background: url(../../assets/questionnaire/backgroundBefore.jpeg);
+  padding: 1em;
+  overflow: auto;
+}
+
+.score{
+  z-index: 100;
+  position: absolute;
+  top:45%;
+  left: 50%;
+  color: #000;
+}
